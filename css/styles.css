@@ -1,19 +1,30 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw0aXx-p7K4KLjztg.woff) format('woff');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
 /* Home page*/
 body {
     background: url(../images/prototype-home-pic-darken.png) no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Lucida Grande', Avenir, Verdana, 'Lucida Sans', sans-serif;
-    margin: 10px 30px;
-    min-height: 100vh;
+    background-position-y: 25%;
+    font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
     display: flex;
     flex-direction: column;
+    margin: 10px 30px;
+    min-height: 100vh;
+
+
 
 
 }
 
 h1 {
-    font-family: 'Lucida Grande', Avenir, Verdana, sans-serif;
+    font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, sans-serif;
     text-align: left;
     color: white;
     font-weight: bold;
@@ -48,28 +59,47 @@ nav a:hover {
     max-width: 180px;
 }
 
+.search-shopping_cart {
+    display: flex;
+    margin-left: auto;
+    margin-top: 10px;
 
-.home_h1 {
-    display: grid;
-    grid-template-rows: 1fr;
-    margin-top: 300px;
-    clear: left;
 }
 
-.home_h1 div {
-    margin-top: -40px;
+.search {
+    border-color: white;
+    border-radius: 2px;
+    position: relative;
+    min-width: 100px;
+    height: 20px;
+    width: 100%;
+}
+
+.shopping_cart {
+    height: 25px;
+    padding: 0px 10px;
+}
+
+main {
+    position: relative;
+    flex: 1;
+}
+
+.home_h1 {
+    position: absolute;
+    bottom: 10px;
 }
 
 .cta {
-    font-family: avenir;
-    font-weight: bolder;
+    font-family: 'montserrat';
+    font-weight: bold;
     color: white;
     background-color: none;
     text-decoration: none;
     text-align: center;
     font-size: 1.5em;
-    border: 4px solid white;
-    border-radius: 10px;
+    border: 3px solid white;
+    border-radius: 15px;
     padding: 8px 45px;
     margin: 10px;
 
@@ -77,7 +107,23 @@ nav a:hover {
 
 footer {
     color: white;
-    margin-top: auto;
-    margin-bottom: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
     text-align: center;
+}
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    body {
+        background-position-x: 65%;
+    }
+}
+
+@media(max-width: 900px) {
+    body {
+        background-position-x: 70%
+    }
 }
