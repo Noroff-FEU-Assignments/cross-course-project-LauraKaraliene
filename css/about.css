@@ -11,19 +11,6 @@ body {
 }
 
 
-
-.home_h1 {
-    margin-bottom: 50px;
-}
-
-h1 {
-    font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, sans-serif;
-    text-align: left;
-    color: white;
-    font-weight: bold;
-    font-size: 100px;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -84,26 +71,16 @@ main {
     flex: 1;
 }
 
-.home_h1 {
-    position: absolute;
-    bottom: 10px;
-}
-
-.slogan {
-    display: block;
-}
-
-.cta {
-    font-family: 'montserrat';
-    font-weight: bold;
-    color: white;
-    background-color: none;
-    text-decoration: none;
+h2 {
+    font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, sans-serif;
     text-align: center;
-    font-size: 1.5em;
-    border: 3px solid white;
-    border-radius: 15px;
-    padding: 8px 45px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+p {
+    color: white;
 }
 
 footer {
