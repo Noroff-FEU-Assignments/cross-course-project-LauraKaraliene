@@ -42,6 +42,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: white;
+    font-size: 17px;
 }
 
 nav a:hover {
@@ -93,7 +94,7 @@ main {
     display: block;
 }
 
-.cta {
+.cta_read-more {
     font-family: 'montserrat';
     font-weight: bold;
     color: white;
@@ -104,6 +105,10 @@ main {
     border: 3px solid white;
     border-radius: 15px;
     padding: 8px 45px;
+}
+
+.cta_read-more:hover {
+    border: 5px solid white;
 }
 
 footer {
