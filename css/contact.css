@@ -69,6 +69,10 @@ main {
     flex: 1;
 }
 
+p span {
+    display: block;
+}
+
 .cta {
     font-family: 'montserrat';
     font-weight: bold;

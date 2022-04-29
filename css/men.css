@@ -11,19 +11,6 @@ body {
 }
 
 
-
-.home_h1 {
-    margin-bottom: 50px;
-}
-
-h1 {
-    font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, sans-serif;
-    text-align: left;
-    color: white;
-    font-weight: bold;
-    font-size: 100px;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -39,9 +26,9 @@ nav li {
     padding-left: 50px;
 }
 
-nav a {
+a {
     text-decoration: none;
-    color: white;
+    color: #42453E;
 }
 
 nav a:hover {
@@ -57,14 +44,26 @@ nav a:hover {
     position: relative;
     margin-left: auto;
     margin-top: 10px;
+}
 
+.search_men {
+    position: relative;
+    border: 2px solid #42453E;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 1 px;
+    min-width: 100 px;
+    max-width: 150 px;
+    height: 20 px;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
 }
 
 .fa-magnifying-glass {
     position: absolute;
     top: 10%;
     right: 60px;
-    color: white;
+    color: #42453E;
     font-size: 20px;
 }
 
@@ -75,7 +74,7 @@ nav a:hover {
 
 .fa-bars {
     position: relative;
-    color: white;
+    color: #42453E;
     font-size: 25px;
 }
 
@@ -84,26 +83,8 @@ main {
     flex: 1;
 }
 
-.home_h1 {
-    position: absolute;
-    bottom: 10px;
-}
-
-.slogan {
-    display: block;
-}
-
-.cta {
-    font-family: 'montserrat';
-    font-weight: bold;
-    color: white;
-    background-color: none;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5em;
-    border: 3px solid white;
-    border-radius: 15px;
-    padding: 8px 45px;
+h3 {
+    color: #42453E;
 }
 
 footer {
