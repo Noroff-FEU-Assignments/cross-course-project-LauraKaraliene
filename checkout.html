@@ -34,44 +34,45 @@
         </div>
     </header>
     <main>
-        <section class="payment_5_steps">
+        <section class="payment-5-steps">
             <div>
                 <i class="fa-solid fa-check"></i>
-                <h6 class="sign_in">Sign In</h6>
+                <h6 class="sign_in" class="steps">Sign In</h6>
             </div>
             <div>
-                <h4 class="step_2">2</h4>
+                <h4 class="step_2" class="steps">2</h4>
                 <h6>Address</h6>
             </div>
             <div>
-                <h4 class="step_3">3</h4>
+                <h4 class="step_3" class="steps">3</h4>
                 <h6>Payment</h6>
             </div>
             <div>
-                <h4 class="step_4">4</h4>
+                <h4 class="step_4" class="steps">4</h4>
                 <h6>Confirmation</h6>
             </div>
             <div>
-                <h4 class="step_5">5</h4>
+                <h4 class="step_5" class="steps">5</h4>
                 <h6>Finished</h6>
             </div>
         </section>
         <section>
             <h4>Contact information</h4>
-            <input type="text" placeholder="E-mail" name="checkout-email">
+            <input type="email" placeholder="E-mail" name="checkout-email" class="form__input" required>
             <h4>Shipping address</h4>
-            <input type="text" placeholder="Country" name="country">
-            <input type="text" placeholder="First name" name="first-name">
-            <input type="text" placeholder="Company (optional)" name="company">
-            <input type="text" placeholder="Street and house number" name="street-house-number">
-            <input type="text" placeholder="Postal code" name="postal-code">
-            <input type="text" placeholder="Phone number" name="mobile">
-            <input type="checkbox" name="save-information" value="save" id="save">
-            <label for="save-information">Save information for the next time</label>
+            <input type="text" placeholder="Country" name="country" class="form__input" required>
+            <input type="text" placeholder="First name" name="first-name" class="form__input" required>
+            <input type="text" placeholder="Company (optional)" name="company" class="form__input">
+            <input type="text" placeholder="Street and house number" name="street-house-number" class="form__input"
+                required>
+            <input type="text" placeholder="Postal code" name="postal-code" class="form__input" required>
+            <input type="tel" placeholder="Phone number" name="phone" class="form__input">
+            <input type="checkbox" id="save">
+            <label for="save">Save information for the next time</label>
         </section>
         <section>
             <input type="text" placeholder="Last name" name="last-name">
-            <input type="text" placeholder="City" name="city">
+            <input type="text" placeholder="City" name="city" required>
         </section>
         <section>
             <h4>Your order</h4>

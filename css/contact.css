@@ -1,6 +1,5 @@
 body {
     background-color: white;
-    background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 25%;
     font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
@@ -36,6 +35,7 @@ nav a:hover {
 
 .logo {
     max-width: 180px;
+    color: #42453E;
 }
 
 .search_cart_bar {
@@ -56,6 +56,7 @@ nav a:hover {
 .shopping_cart {
     height: 25px;
     padding: 0px 10px;
+    color: #42453E
 }
 
 .fa-bars {
@@ -65,26 +66,105 @@ nav a:hover {
 }
 
 main {
-    position: relative;
     flex: 1;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+.info-blocks {
+    flex: 1, 1, 1, 2;
+    margin-right: 100px;
+}
+
+.social-media {
+    flex-direction: row;
+    position: absolute;
+}
+
+.facebook {
+    position: relative;
+    padding-bottom: 3px;
 }
 
 p span {
     display: block;
+    color: #42453E
 }
 
-.cta {
-    font-family: 'montserrat';
-    font-weight: bold;
-    color: white;
-    background-color: none;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5em;
-    border: 3px solid white;
-    border-radius: 15px;
-    padding: 8px 45px;
+p a {
+    display: block;
+    color: #42453E;
 }
+
+h3 {
+    color: #42453E
+}
+
+.contact-customer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 100px;
+}
+
+.customer {
+    padding-right: 100px;
+}
+
+::placeholder {
+    color: #637176;
+}
+
+.form__input {
+    display: block;
+    padding: 8px;
+    margin: 12px;
+    margin-left: 0px;
+    border: #42453E solid 1px;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+label {
+    font-size: 0.6em;
+}
+
+.cta_contact {
+    position: absolute;
+    min-width: 300px;
+    padding: 5px;
+    border: #42453E 1px solid;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #C8D2D3;
+    margin-top: 30px;
+    margin-left: -205px;
+
+}
+
+.subscribe {
+    flex-direction: column;
+}
+
+.subscribe-email {
+    border: 0;
+    border-bottom: #42453E 1px solid;
+}
+
+.cta_subscribe {
+    border: 0;
+    border-bottom: #42453E 1px solid;
+    background-color: white;
+}
+
 
 footer {
     color: #42453E;

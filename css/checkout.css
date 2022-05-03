@@ -76,7 +76,11 @@ nav a:hover {
     color: #8C3134;
 }
 
-.step_2 {
+.step_2,
+.step_3,
+.step_4,
+.step_5,
+.step_6 {
     border: #42453E 2px solid;
     border-radius: 50%;
     color: #42453E;
@@ -84,36 +88,9 @@ nav a:hover {
     width: 20px;
 }
 
-.step_3 {
-    border: #42453E 2px solid;
-    border-radius: 50%;
-    color: #42453E;
-    padding: 2px;
-    width: 20px
-}
 
-.step_4 {
-    border: #42453E 2px solid;
-    border-radius: 50%;
-    color: #42453E;
-    padding: 2px;
-    width: 20px
-}
-
-.step_5 {
-    border: #42453E 2px solid;
-    border-radius: 50%;
-    color: #42453E;
-    padding: 2px;
-    width: 20px
-}
-
-.step_6 {
-    border: #42453E 2px solid;
-    border-radius: 50%;
-    color: #42453E;
-    padding: 2px;
-    width: 20px
+.form__input {
+    display: block;
 }
 
 .order_jacket {
@@ -131,7 +108,6 @@ nav a:hover {
     border-radius: 15px;
     padding: 8px 25px;
     border-color: #707070;
-}
 }
 
 footer {

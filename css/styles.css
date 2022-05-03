@@ -9,3 +9,7 @@
 a {
     text-decoration: none;
 }
+
+.current {
+    text-decoration: underline;
+}

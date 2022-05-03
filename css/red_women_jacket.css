@@ -69,19 +69,11 @@ nav a:hover {
     border: 2px solid #42453E;
 }
 
-.blue_rectangle {
-    padding-bottom: 7px;
-}
 
-.yellow_rectangle {
-    padding-bottom: 7px;
-}
-
-.light_blue_rectangle {
-    padding-bottom: 7px;
-}
 
 .red_rectangle {
+    position: relative;
+    top: 7px;
     border-bottom: #42453E 2px solid;
     padding-bottom: 5px;
 }

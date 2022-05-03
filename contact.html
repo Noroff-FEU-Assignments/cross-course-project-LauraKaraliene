@@ -22,7 +22,7 @@
             <ul>
                 <li><a href="women.html">Women</a></li>
                 <li><a href="men.html">Men</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" class="currnt">Contact Us</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
@@ -34,49 +34,62 @@
         </div>
     </header>
     <main>
-        <section>
-            <h3>Customer service</h3>
-            <p>
-                <span>Laura@rainydays.com </span>
-                <span>Phone (+45)45032821</span>
-                <span>Monday - Friday</span>
-                <span>8 AM - 4 PM</span>
-            </p>
-            <h3>Address</h3>
-            <p>
-                <span>Kongens gate 15 </span>
-                <span>6100 Alesund</span>
-                <span>Norway</span>
-            </p>
-            <h3>FAQ</h3>
-            <p>
-                <span>Product </span>
-                <span>Orders</span>
-                <span>Return</span>
-                <span>Payment</span>
-                <span>Shipping</span>
-                <span>Size guide</span>
-            </p>
-            <h3>Follow us</h3>
-            <div>
-                <img src="../images/Style-tile-icon-fb.png" alt="facebook icon">
-                <img src="../images/Style-tile-icon-insta.png" alt="instagram icon">
+        <section class="contact-info">
+            <div class="info-blocks">
+                <h3>Customer service</h3>
+                <p>
+                    <span>Laura@rainydays.com </span>
+                    <span>Phone (+45)45032821</span>
+                    <span>Monday - Friday</span>
+                    <span>8 AM - 4 PM</span>
+                </p>
+            </div>
+            <div class="info-blocks">
+                <h3>Address</h3>
+                <p>
+                    <span>Kongens gate 15 </span>
+                    <span>6100 Alesund</span>
+                    <span>Norway</span>
+                </p>
+            </div>
+            <div class="info-blocks">
+                <h3>FAQ</h3>
+                <p>
+                    <a href="#">Product </a>
+                    <a href="#">Orders</a>
+                    <a href="#">Return</a>
+                    <a href="#">Payment</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Size guide</a>
+                </p>
+            </div>
+            <div class="info-blocks">
+                <h3>Follow us</h3>
+                <div class="social-media">
+                    <img src="../images/Style-tile-icon-fb.png" alt="facebook icon" class="facebook">
+                    <img src="../images/Style-tile-icon-insta.png" alt="instagram icon">
+                </div>
             </div>
         </section>
-        <section>
-            <h3>Send us a message</h3>
-            <input type="text" placeholder="Name" name="name">
-            <input type="text" placeholder="E-mail" name="message-email">
-            <textarea id="message" placeholder="Write your message here" name="message" rows="7" cols="30"></textarea>
-            <input type="checkbox" name="agreepolicy" value="agree" id="agree">
-            <label for="agreepolicy">I agree to the Rainy Days Privacy Policy</label>
-            <input type="submit" value="Send" class="cta_contact">
-        </section>
-        <section>
-            <h3>Subscribe</h3>
-            <input type="text" placeholder="E-mail" name="subscribe-email">
-            <input type="checkbox" name="agreepolicy" value="agree" id="agree">
-            <label for="agreepolicy">I agree to the Rainy Days Privacy Policy</label>
+        <section class="contact-customer">
+            <form class="customer">
+                <h3>Send us a message</h3>
+                <input type="text" placeholder="Name" name="name" class="form__input" required>
+                <input type="email" placeholder="E-mail" name="message-email" class="form__input" required>
+                <textarea id="message" placeholder="Leave your message here" name="message" rows="7" cols="30"
+                    class="form__input" required></textarea>
+                <input type="checkbox" name="message-agree" id="message-agree" required>
+                <label for="message-agree">I agree to the Rainy Days Privacy Policy</label>
+                <input type="submit" name="submit" value="Send" class="cta_contact" class="form__input">
+            </form>
+            <form class="customer">
+                <h3>Subscribe</h3>
+                <input type="email" placeholder="E-mail" name="subscribe-email" class="subscribe-email" required>
+                <input type="submit" name="submit" value=">" class="cta_subscribe" />
+                <input type="checkbox" name="subscribe-agree" id="subscribe-agree" required>
+                <label for="subscribe-agree">I agree to the Rainy Days Privacy Policy</label>
+            </form>
+
         </section>
     </main>
     <footer>Copyright &copy; Rainy Days 2022
