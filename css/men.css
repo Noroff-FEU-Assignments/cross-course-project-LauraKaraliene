@@ -83,6 +83,28 @@ main {
     flex: 1;
 }
 
+.men_main {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    top: 70px;
+    margin-left: 240px;
+}
+
+.men_main a {
+    display: block;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.men {
+    padding-right: 60px;
+}
+
 h3 {
     color: #42453E;
 }

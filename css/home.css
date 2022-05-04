@@ -109,6 +109,7 @@ main {
 
 .cta_read-more:hover {
     border: 5px solid white;
+    text-decoration: none;
 }
 
 footer {

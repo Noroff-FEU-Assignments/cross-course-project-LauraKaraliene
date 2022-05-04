@@ -78,9 +78,29 @@ nav a:hover {
     font-size: 25px;
 }
 
+
 main {
     position: relative;
     flex: 1;
+}
+
+.women_main {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    top: 70px;
+    margin-left: 240px;
+}
+
+.women_main a {
+    display: block;
+    font-size: 1em;
+}
+
+
+.women {
+    padding-right: 60px;
 }
 
 h3 {

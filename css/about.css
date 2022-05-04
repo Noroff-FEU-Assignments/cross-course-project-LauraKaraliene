@@ -1,13 +1,13 @@
 body {
-    background: url(../images/Fitting\ softshell\ coat\ in\ a\ store.\ Fashion\ conception.jpeg) no-repeat center center fixed;
+    background: no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 25%;
     font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
     display: flex;
     flex-direction: column;
     margin: 10px 30px;
     min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../images/Fitting\ softshell\ coat\ in\ a\ store.\ Fashion\ conception.jpeg);
 }
 
 
@@ -71,16 +71,42 @@ main {
     flex: 1;
 }
 
+.about_descriptions {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    bottom: 180px;
+}
+
+.about {
+    position: relative;
+    display: block;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin: 20px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.icon {
+    max-width: 60px;
+}
+
+
 h2 {
     font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, sans-serif;
     text-align: center;
     color: white;
     font-weight: bold;
     font-size: 3em;
+    margin: 10px;
 }
 
 p {
     color: white;
+    padding: 15px;
 }
 
 footer {
