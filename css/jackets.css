@@ -1,8 +1,5 @@
 body {
     background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 25%;
     font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
     display: flex;
     flex-direction: column;
@@ -62,4 +59,18 @@ nav a:hover {
     position: relative;
     color: #42453E;
     font-size: 25px;
+}
+
+main {
+    position: relative;
+    flex: 1;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+}
+
+img {
+    max-width: 300px;
 }

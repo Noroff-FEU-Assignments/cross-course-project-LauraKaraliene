@@ -97,10 +97,6 @@ main {
     font-size: 1em;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 .men {
     padding-right: 60px;
 }

@@ -151,10 +151,6 @@ label {
 
 }
 
-.subscribe {
-    flex: 2;
-}
-
 .subscribe-email {
     border: 0;
     border-bottom: #42453E 1px solid;
@@ -164,6 +160,10 @@ label {
     border: 0;
     border-bottom: #42453E 1px solid;
     background-color: white;
+}
+
+.subscribe div {
+    margin: 10px;
 }
 
 

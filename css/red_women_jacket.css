@@ -1,8 +1,5 @@
 body {
     background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 25%;
     font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
     display: flex;
     flex-direction: column;
@@ -62,7 +59,30 @@ nav a:hover {
     position: relative;
     color: #42453E;
     font-size: 25px;
+    grid-gap: 1em;
 }
+
+main {
+    position: relative;
+    flex: 1;
+
+}
+
+.product-page {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.jacket {
+    margin-right: 100px;
+}
+
+.jacket-info a {
+    font-size: 0.8em;
+}
+
 
 .product_specific {
     max-width: 600px;
@@ -71,15 +91,33 @@ nav a:hover {
 
 
 
-.red_rectangle {
+h2 {
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+h5 {
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+h6 {
+    margin: 15px 0px;
+    color: #637176;
+}
+
+span {
+    margin-right: 10px;
+}
+
+.red-rectangle {
     position: relative;
     top: 7px;
     border-bottom: #42453E 2px solid;
     padding-bottom: 5px;
-}
-
-h5 {
-    font-weight: normal;
 }
 
 .size_M {
@@ -89,13 +127,32 @@ h5 {
 
 .cta_add-to-cart {
     background-color: #8C3134;
-    font-family: 'montserrat';
-    font-weight: bold;
+
+    font-weight: bolder;
     color: white;
     text-align: center;
     font-size: 1.2em;
     border-radius: 15px;
     padding: 12px 50px;
+    margin: 20px 0px;
+}
+
+.cta_add-to-cart:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #8C3134;
+    font-weight: bold;
+    border: 2px solid #8C3134;
+    border-radius: 15px;
+    padding: 12px 50px;
+    margin: 20px 0px;
+
+}
+
+.info {
+    flex-direction: column;
+    align-content: center;
+    margin: 30px;
 }
 
 footer {
