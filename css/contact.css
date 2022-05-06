@@ -162,8 +162,18 @@ label {
     background-color: white;
 }
 
+.subscribe {
+    align-self: flex-end;
+    text-align: left;
+    margin-top: 230px;
+}
+
 .subscribe div {
     margin: 10px;
+}
+
+.subscribe h3 {
+    margin-inline-start: 10px;
 }
 
 

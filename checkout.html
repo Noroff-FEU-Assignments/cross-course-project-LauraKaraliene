@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00edcf15e0.js" crossorigin="anonymous"></script>
     <link href="/css/styles.css" rel="stylesheet" />
     <link href="css/checkout.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/00edcf15e0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -34,74 +34,78 @@
         </div>
     </header>
     <main>
-        <section class="payment-5-steps">
-            <div>
-                <i class="fa-solid fa-check"></i>
-                <h6 class="sign_in" class="steps">Sign In</h6>
-            </div>
-            <div>
-                <h4 class="step_2" class="steps">2</h4>
-                <h6>Address</h6>
-            </div>
-            <div>
-                <h4 class="step_3" class="steps">3</h4>
-                <h6>Payment</h6>
-            </div>
-            <div>
-                <h4 class="step_4" class="steps">4</h4>
-                <h6>Confirmation</h6>
-            </div>
-            <div>
-                <h4 class="step_5" class="steps">5</h4>
-                <h6>Finished</h6>
-            </div>
+        <section class="checkout-left">
+            <section class="payment-5-steps">
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <h6 class="sign_in" class="steps">Sign In</h6>
+                </div>
+                <div>
+                    <h4 class="step_2" class="steps">2</h4>
+                    <h6>Address</h6>
+                </div>
+                <div>
+                    <h4 class="step_3" class="steps">3</h4>
+                    <h6>Payment</h6>
+                </div>
+                <div>
+                    <h4 class="step_4" class="steps">4</h4>
+                    <h6>Confirmation</h6>
+                </div>
+                <div>
+                    <h4 class="step_5" class="steps">5</h4>
+                    <h6>Finished</h6>
+                </div>
+            </section>
+            <section>
+                <h4>Contact information</h4>
+                <input type="email" placeholder="E-mail" name="checkout-email" class="form__input" required>
+                <h4>Shipping address</h4>
+                <input type="text" placeholder="Country" name="country" class="form__input" required>
+                <input type="text" placeholder="First name" name="first-name" class="form__input" required>
+                <input type="text" placeholder="Company (optional)" name="company" class="form__input">
+                <input type="text" placeholder="Street and house number" name="street-house-number" class="form__input"
+                    required>
+                <input type="text" placeholder="Postal code" name="postal-code" class="form__input" required>
+                <input type="tel" placeholder="Phone number" name="phone" class="form__input">
+                <input type="checkbox" id="save">
+                <label for="save">Save information for the next time</label>
+            </section>
+            <section>
+                <input type="text" placeholder="Last name" name="last-name">
+                <input type="text" placeholder="City" name="city" required>
+            </section>
         </section>
-        <section>
-            <h4>Contact information</h4>
-            <input type="email" placeholder="E-mail" name="checkout-email" class="form__input" required>
-            <h4>Shipping address</h4>
-            <input type="text" placeholder="Country" name="country" class="form__input" required>
-            <input type="text" placeholder="First name" name="first-name" class="form__input" required>
-            <input type="text" placeholder="Company (optional)" name="company" class="form__input">
-            <input type="text" placeholder="Street and house number" name="street-house-number" class="form__input"
-                required>
-            <input type="text" placeholder="Postal code" name="postal-code" class="form__input" required>
-            <input type="tel" placeholder="Phone number" name="phone" class="form__input">
-            <input type="checkbox" id="save">
-            <label for="save">Save information for the next time</label>
-        </section>
-        <section>
-            <input type="text" placeholder="Last name" name="last-name">
-            <input type="text" placeholder="City" name="city" required>
-        </section>
-        <section>
-            <h4>Your order</h4>
-            <img src="../images/red_women_jacket.png" alt="red women jacket" class="order_jacket" />
-            <h4>1x Red Women Jacket</h4>
-            <h5>Red / M</h5>
-            <h4>Shipping</h4>
-            <h4>NOK 2300</h4>
-            <h4>Free</h4>
-        </section>
-        <section>
-            <input type="text" placeholder="Voucher or discount code" name="voucher">
-            <input type="submit" value="Apply" class="cta_voucher">
-        </section>
-        <section>
-            <h4>Total</h4>
-            <h6>VAT, Shipping and customs costs included</h6>
-            <h4>NOK 2300</h4>
-        </section>
-        <section>
-            <a href="#">Change my order</a>
-        </section>
-        <section>
-            <p>
-            <h6>Shipping info</h6>
-            <h6>Delivery to Norway in 1-5 days</h6>
-            <h6>All taxes and duties included</h6>
-            <h6>Return within 30 days. <a href="#">Read more ></a></h6>
-            </p>
+        <section class="checkout-right">
+            <section>
+                <h4>Your order</h4>
+                <img src="../images/red_women_jacket.png" alt="red women jacket" class="order_jacket" />
+                <h4>1x Red Women Jacket</h4>
+                <h5>Red / M</h5>
+                <h4>Shipping</h4>
+                <h4>NOK 2300</h4>
+                <h4>Free</h4>
+            </section>
+            <section>
+                <input type="text" placeholder="Voucher or discount code" name="voucher">
+                <input type="submit" value="Apply" class="cta_voucher">
+            </section>
+            <section>
+                <h4>Total</h4>
+                <h6>VAT, Shipping and customs costs included</h6>
+                <h4>NOK 2300</h4>
+            </section>
+            <section>
+                <a href="#">Change my order</a>
+            </section>
+            <section>
+                <p>
+                <h6>Shipping info</h6>
+                <h6>Delivery to Norway in 1-5 days</h6>
+                <h6>All taxes and duties included</h6>
+                <h6>Return within 30 days. <a href="#">Read more ></a></h6>
+                </p>
+            </section>
         </section>
     </main>
     <footer>Copyright &copy; Rainy Days 2022

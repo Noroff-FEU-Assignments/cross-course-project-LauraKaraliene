@@ -73,20 +73,34 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: left;
+    top: 50px;
 }
+
+
 
 .jacket {
     margin-right: 100px;
 }
 
+
 .jacket-info a {
     font-size: 0.8em;
 }
 
+.info {
+    border-bottom: #637176 solid 1px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-content: center;
+    margin: 20px
+}
+
 
 .product_specific {
-    max-width: 600px;
+    position: relative;
+    max-width: 500px;
     border: 2px solid #42453E;
+    padding: 0px 40px;
 }
 
 
@@ -125,9 +139,12 @@ span {
     font-weight: bold;
 }
 
+.add-to-cart {
+    padding-top: 5px;
+}
+
 .cta_add-to-cart {
     background-color: #8C3134;
-
     font-weight: bolder;
     color: white;
     text-align: center;
@@ -146,13 +163,11 @@ span {
     border-radius: 15px;
     padding: 12px 50px;
     margin: 20px 0px;
-
 }
 
-.info {
-    flex-direction: column;
-    align-content: center;
-    margin: 30px;
+.description {
+    border-bottom: none;
+    padding-top: 5px;
 }
 
 footer {

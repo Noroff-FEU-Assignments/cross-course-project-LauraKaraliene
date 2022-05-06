@@ -64,12 +64,20 @@ nav a:hover {
     font-size: 25px;
 }
 
+.payment-5-steps {
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 .fa-check {
     border: #8C3134 2px solid;
     border-radius: 50%;
     color: #8C3134;
     padding: 2px;
+    width: 18px;
+    text-align: center;
 }
 
 .sign_in {
@@ -86,6 +94,7 @@ nav a:hover {
     color: #42453E;
     padding: 2px;
     width: 20px;
+    text-align: center;
 }
 
 
@@ -115,4 +124,10 @@ footer {
     padding: 10px;
     margin-bottom: 0px;
     text-align: center;
+}
+
+@media(min-width: 701px) {
+    .fa-bars {
+        display: none;
+    }
 }
