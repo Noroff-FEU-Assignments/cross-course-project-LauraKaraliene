@@ -13,7 +13,9 @@ body {
 header {
     display: flex;
     align-items: center;
+    border-bottom: #707070 solid 1px;
 }
+
 
 nav ul {
     padding: 5px;
@@ -64,12 +66,41 @@ nav a:hover {
     font-size: 25px;
 }
 
+main {
+    position: relative;
+    flex: 1;
+    border-bottom: #637176 solid 1px;
+    width: 100%;
+}
+
+.checkout-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
 .payment-5-steps {
     display: flex;
     flex-direction: row;
+    gap: 70px;
+    align-items: baseline;
+    position: relative;
+    max-width: 450px;
+    margin-top: 20px;
+    justify-content: space-between;
+
 }
 
+hr {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+}
 
+.payment-5-steps div {
+    position: relative;
+    z-index: 1000;
+}
 
 .fa-check {
     border: #8C3134 2px solid;
@@ -78,6 +109,12 @@ nav a:hover {
     padding: 2px;
     width: 18px;
     text-align: center;
+    background-color: white;
+}
+
+.check {
+    border: none;
+    color: #637176;
 }
 
 .sign_in {
@@ -95,17 +132,147 @@ nav a:hover {
     padding: 2px;
     width: 20px;
     text-align: center;
+    background-color: white;
 }
 
+.checkout-left {
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.checkout-left a {
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.checkout-left a:hover {
+    color: #42453E;
+    font-weight: bold;
+}
+
+.form-left {
+    margin-top: 50px;
+}
 
 .form__input {
     display: block;
+    margin: 15px 5px 15px 0px;
+}
+
+.email,
+.country,
+.first,
+.last,
+.company,
+.number,
+.street,
+.post,
+.city,
+.phone,
+.voucher {
+    padding: 8px;
+    margin: 12px;
+    margin-left: 0px;
+    border: #42453E solid 1px;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+.checkbox {
+    min-width: 20px;
+    margin: 0px;
+}
+
+.cta_next {
+    padding: 8px;
+    margin: 12px;
+    margin-left: 0px;
+    border: #42453E solid 1px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #C8D2D3;
+    font-family: 'montserrat';
+    font-size: 1em;
+}
+
+
+
+.email {
+    border: #42453E solid 2px;
+    font-weight: bolder;
+}
+
+.first-last-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.postal-city {
+    display: flex;
+    flex-direction: row;
+}
+
+.street {
+    margin-top: 25px
+}
+
+::placeholder {
+    color: #637176;
+    font-size: 0.9em;
+}
+
+.save-info {
+    font-size: 0.7em;
+}
+
+h4 {
+    margin-bottom: 3px;
+}
+
+h3,
+h4,
+h5,
+h5,
+h6 {
+    color: #42453E;
+}
+
+
+
+.checkout-right {
+    flex: 1;
+    border-left: #707070 solid 1px;
+}
+
+.jacket {
+    display: flex;
+    flex-direction: row;
 }
 
 .order_jacket {
-    max-width: 200px;
-    border: 2px solid #42453E;
+    max-width: 150px;
+    border: 1px solid #42453E;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
 }
+
+
+.right {
+    padding-left: 15px;
+    border-bottom: #637176 solid 1px;
+    margin: 10px 0px;
+}
+
+.right-voucher {
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+}
+
 
 .cta_voucher {
     background-color: #C8D2D3;
@@ -113,11 +280,39 @@ nav a:hover {
     font-weight: bold;
     color: white;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 15px;
-    padding: 8px 25px;
+    padding: 8px 15px;
     border-color: #707070;
 }
+
+.cta_voucher:hover {
+    color: #42453E;
+}
+
+
+.total {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px;
+}
+
+.total h5,
+h6 {
+    margin: 10px, 0px;
+}
+
+
+
+.change-order {
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+
+.shipping-info {
+    border-bottom: none;
+}
+
 
 footer {
     color: #42453E;

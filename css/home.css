@@ -120,19 +120,32 @@ footer {
 }
 
 
-@media(max-width: 500px) {
+@media(max-width: 400px) {
     h1 {
-        font-size: 60px;
+        font-size: 30px;
+    }
+
+    .logo {
+        max-width: 100px;
     }
 }
+
+
+@media(max-width: 500px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
 
 @media(max-width: 700px) {
     body {
         background-position-x: 65%;
+
     }
 
     header {
-        background-color: rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid white;
         width: 100%;
     }
 
@@ -197,6 +210,12 @@ footer {
         padding-left: 20px;
     }
 
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media(min-width: 1300px) {
     h1 {
         font-size: 80px;
     }

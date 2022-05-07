@@ -1,19 +1,22 @@
 body {
-    background: url(../images/prototype-home-pic-darken.png) no-repeat center center fixed;
+    background: no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 25%;
     font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 10px 30px;
+    margin: 0px;
     min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/prototype-home-pic-darken.png);
 }
 
 
 header {
     display: flex;
     align-items: center;
+    background-color: white;
+    padding: 10px 30px;
 }
 
 nav ul {
@@ -78,10 +81,11 @@ nav a:hover {
     font-size: 25px;
 }
 
-
 main {
     position: relative;
     flex: 1;
+    background-color: white;
+    margin-bottom: 500px;
 }
 
 .women_main {
@@ -89,7 +93,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    top: 70px;
+    top: 30px;
     margin-left: 240px;
 }
 
@@ -97,7 +101,6 @@ main {
     display: block;
     font-size: 1em;
 }
-
 
 .women {
     padding-right: 60px;
@@ -115,24 +118,19 @@ footer {
 }
 
 
-@media(max-width: 500px) {
-    h1 {
-        font-size: 60px;
-    }
-}
 
 @media(max-width: 700px) {
     body {
-        background-position-x: 65%;
-    }
-
-    header {
-        background-color: rgba(0, 0, 0, 0.2);
-        width: 100%;
+        background-color: white;
+        background-image: none;
     }
 
     nav {
         display: none;
+    }
+
+    .search_women {
+        max-width: 100px;
     }
 
     .fa-magnifying-glass {
@@ -155,33 +153,31 @@ footer {
         font-size: 23px;
         right: 50px;
     }
+
+
+
 }
 
 @media(max-width: 849px) {
-    .search {
+    .search_women {
         display: none;
     }
-}
 
-@media(min-width: 850px) {
-    .search {
-        position: relative;
-        border: 2px solid white;
-        background: rgba(0, 0, 0, 0);
-        border-radius: 1px;
-        min-width: 100px;
-        max-width: 150px;
-        height: 20px;
-        width: 100%;
-        font-size: 18px;
-        color: white;
-        outline: none;
+    .women_main {
+        top: 15px;
+        margin-left: 100px;
     }
 }
 
-@media(max-width: 950px) {
+
+
+@media(max-width: 1000px) {
     body {
         background-position-x: 60%
+    }
+
+    main {
+        margin-bottom: 350px
     }
 
     .search {
@@ -192,7 +188,5 @@ footer {
         padding-left: 20px;
     }
 
-    h1 {
-        font-size: 80px;
-    }
+
 }

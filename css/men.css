@@ -1,12 +1,13 @@
 body {
-    background: url(../images/prototype-home-pic-darken.png) no-repeat center center fixed;
+    background: no-repeat center center fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/prototype-home-pic-darken.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 25%;
     font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
     display: flex;
     flex-direction: column;
-    margin: 10px 30px;
+    margin: 0px;
     min-height: 100vh;
 }
 
@@ -14,6 +15,8 @@ body {
 header {
     display: flex;
     align-items: center;
+    background-color: white;
+    padding: 10px 30px;
 }
 
 nav ul {
@@ -81,6 +84,8 @@ nav a:hover {
 main {
     position: relative;
     flex: 1;
+    background-color: white;
+    margin-bottom: 500px;
 }
 
 .men_main {
@@ -88,8 +93,9 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    top: 70px;
+    top: 30px;
     margin-left: 240px;
+    padding-bottom: 10px;
 }
 
 .men_main a {

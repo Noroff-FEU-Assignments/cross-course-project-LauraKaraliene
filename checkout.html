@@ -33,11 +33,15 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </header>
-    <main>
+    <main class="checkout-main">
         <section class="checkout-left">
             <section class="payment-5-steps">
+                <hr>
                 <div>
-                    <i class="fa-solid fa-check"></i>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
                     <h6 class="sign_in" class="steps">Sign In</h6>
                 </div>
                 <div>
@@ -50,60 +54,87 @@
                 </div>
                 <div>
                     <h4 class="step_4" class="steps">4</h4>
-                    <h6>Confirmation</h6>
+                    <h6>Confirm</h6>
                 </div>
                 <div>
                     <h4 class="step_5" class="steps">5</h4>
                     <h6>Finished</h6>
                 </div>
             </section>
-            <section>
+
+            <form class="form-left">
                 <h4>Contact information</h4>
-                <input type="email" placeholder="E-mail" name="checkout-email" class="form__input" required>
+                <input type="email" placeholder="E-mail" name="checkout-email" class="form__input email" required>
                 <h4>Shipping address</h4>
-                <input type="text" placeholder="Country" name="country" class="form__input" required>
-                <input type="text" placeholder="First name" name="first-name" class="form__input" required>
-                <input type="text" placeholder="Company (optional)" name="company" class="form__input">
-                <input type="text" placeholder="Street and house number" name="street-house-number" class="form__input"
-                    required>
-                <input type="text" placeholder="Postal code" name="postal-code" class="form__input" required>
-                <input type="tel" placeholder="Phone number" name="phone" class="form__input">
-                <input type="checkbox" id="save">
-                <label for="save">Save information for the next time</label>
-            </section>
-            <section>
-                <input type="text" placeholder="Last name" name="last-name">
-                <input type="text" placeholder="City" name="city" required>
-            </section>
+                <input type="text" placeholder="Country" name="country" class="form__input country" required>
+                <div class="first-last-name">
+                    <input type="text" placeholder="First name" name="first-name" class="form__input first" required>
+                    <input type="text" placeholder="Last name" class="form__input last" name="last-name">
+                </div>
+
+                <input type="text" placeholder="Company (optional)" name="company" class="form__input company">
+                <input type="text" placeholder="Street and house number" name="street-house-number"
+                    class="form__input street" required>
+                <div class="postal-city">
+                    <input type="text" placeholder="Postal code" name="postal-code" class="form__input post" required>
+                    <input type="text" placeholder="City" class="form__input city" name="city" required>
+                </div>
+
+                <input type="tel" placeholder="Phone number" name="phone" class="form__input phone">
+                <input type="checkbox" id="save" class="checkbox">
+                <label class="save-info" for="save">Save information for the next time</label>
+                <div class="cta_next">
+                    <a class="next" href="#">Next > </a>
+                </div>
+            </form>
         </section>
+
         <section class="checkout-right">
-            <section>
+            <div class="right order">
                 <h4>Your order</h4>
-                <img src="../images/red_women_jacket.png" alt="red women jacket" class="order_jacket" />
-                <h4>1x Red Women Jacket</h4>
-                <h5>Red / M</h5>
-                <h4>Shipping</h4>
-                <h4>NOK 2300</h4>
-                <h4>Free</h4>
+            </div>
+            <section class="right jacket">
+                <div class="jacket-img">
+                    <img src="../images/red_women_jacket.png" alt="red women jacket" class="order_jacket" />
+                </div>
+                <div class="order-info">
+                    <div class="order-price">
+                        <h5>1x Red Women Jacket</h5>
+                        <h5>NOK 2300</h5>
+                    </div>
+                    <h6>Red / M</h6>
+                    <div class="order-shipping">
+                        <h5>Shipping</h5>
+                        <h5>Free</h5>
+                    </div>
+                </div>
             </section>
-            <section>
-                <input type="text" placeholder="Voucher or discount code" name="voucher">
+            <section class="right-voucher right">
+                <input type="text" placeholder="Voucher or discount code" name="voucher" class="voucher">
                 <input type="submit" value="Apply" class="cta_voucher">
             </section>
-            <section>
-                <h4>Total</h4>
-                <h6>VAT, Shipping and customs costs included</h6>
-                <h4>NOK 2300</h4>
+            <section class="right total">
+                <div>
+                    <h5>Total</h5>
+                    <h6>VAT, Shipping and customs costs included</h6>
+                </div>
+                <div>
+                    <h5>NOK 2300</h5>
+                </div>
+
             </section>
-            <section>
-                <a href="#">Change my order</a>
+            <section class="right change-order">
+                <div>
+                    <a href="#">Change my order</a>
+                </div>
+
             </section>
-            <section>
+            <section class="right shipping-info">
                 <p>
-                <h6>Shipping info</h6>
-                <h6>Delivery to Norway in 1-5 days</h6>
-                <h6>All taxes and duties included</h6>
-                <h6>Return within 30 days. <a href="#">Read more ></a></h6>
+                <h6><i class="fa-solid fa-check check"></i> Shipping info</h6>
+                <h6><i class="fa-solid fa-check check"></i>Delivery to Norway in 1-5 days</h6>
+                <h6><i class="fa-solid fa-check check"></i>All taxes and duties included</h6>
+                <h6><i class="fa-solid fa-check check"></i>Return within 30 days. <a href="#">Read more ></a></h6>
                 </p>
             </section>
         </section>
