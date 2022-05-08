@@ -10,10 +10,10 @@ body {
     min-height: 100vh;
 }
 
-
-
 .home_h1 {
     margin-bottom: 50px;
+    position: absolute;
+    bottom: 10px;
 }
 
 h1 {
@@ -85,10 +85,7 @@ main {
     flex: 1;
 }
 
-.home_h1 {
-    position: absolute;
-    bottom: 10px;
-}
+
 
 .slogan {
     display: block;
@@ -122,7 +119,7 @@ footer {
 
 @media(max-width: 400px) {
     h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .logo {
@@ -195,6 +192,8 @@ footer {
         color: white;
         outline: none;
     }
+
+
 }
 
 @media(max-width: 950px) {

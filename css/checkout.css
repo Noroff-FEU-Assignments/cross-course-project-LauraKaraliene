@@ -1,7 +1,5 @@
 body {
     background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position-y: 25%;
     font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
     display: flex;
@@ -14,6 +12,7 @@ header {
     display: flex;
     align-items: center;
     border-bottom: #707070 solid 1px;
+
 }
 
 
@@ -47,6 +46,20 @@ nav a:hover {
     margin-top: 10px;
 }
 
+
+.search {
+    position: relative;
+    border: 2px solid #42453E;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 1 px;
+    min-width: 100 px;
+    max-width: 150 px;
+    height: 20 px;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+}
+
 .fa-magnifying-glass {
     position: absolute;
     top: 10%;
@@ -70,7 +83,6 @@ main {
     position: relative;
     flex: 1;
     border-bottom: #637176 solid 1px;
-    width: 100%;
 }
 
 .checkout-main {
@@ -88,7 +100,6 @@ main {
     max-width: 450px;
     margin-top: 20px;
     justify-content: space-between;
-
 }
 
 hr {
@@ -198,8 +209,6 @@ hr {
     font-size: 1em;
 }
 
-
-
 .email {
     border: #42453E solid 2px;
     font-weight: bolder;
@@ -240,8 +249,6 @@ h6 {
     color: #42453E;
 }
 
-
-
 .checkout-right {
     flex: 1;
     border-left: #707070 solid 1px;
@@ -257,9 +264,7 @@ h6 {
     border: 1px solid #42453E;
     margin-right: 15px;
     margin-bottom: 15px;
-
 }
-
 
 .right {
     padding-left: 15px;
@@ -272,7 +277,6 @@ h6 {
     display: flex;
     flex-direction: row;
 }
-
 
 .cta_voucher {
     background-color: #C8D2D3;
@@ -290,7 +294,6 @@ h6 {
     color: #42453E;
 }
 
-
 .total {
     display: flex;
     flex-direction: row;
@@ -302,8 +305,6 @@ h6 {
     margin: 10px, 0px;
 }
 
-
-
 .change-order {
     font-size: 0.8em;
     margin-top: 15px;
@@ -313,7 +314,6 @@ h6 {
     border-bottom: none;
 }
 
-
 footer {
     color: #42453E;
     padding: 10px;
@@ -321,8 +321,145 @@ footer {
     text-align: center;
 }
 
+@media(max-width: 1200px) {
+    .right-voucher {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 1100px) {
+    .search {
+        max-width: 150px;
+    }
+}
+
+@media(min-width: 1001px) {
+    .order-summary {
+        display: none;
+    }
+}
+
+@media(max-width: 1000px) {
+    .checkout-right {
+        display: none;
+    }
+
+    .shopping_cart {
+        display: none;
+    }
+
+    .checkout-main {
+        justify-content: center;
+    }
+
+    .order-summary div {
+        display: flex;
+        flex-direction: row;
+        background-color: #E4E4E4;
+        justify-content: space-around;
+    }
+
+    .order-summary img {
+        max-height: 25px;
+        align-self: center;
+        padding-right: 10px;
+    }
+
+    .fa-magnifying-glass {
+        right: 5px;
+    }
+}
+
+@media(max-width: 950px) {
+    nav li {
+        padding-left: 20px;
+    }
+
+    .checkout-main {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width: 800px) {
+    .search {
+        max-width: 100px;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+    .form-left {
+        align-self: center;
+        margin: auto;
+
+    }
+
+    .checkout-left {
+        margin: 5px;
+        padding: 0px 5px;
+    }
+}
+
+@media(max-width: 700px) {
+    .search {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        right: 35px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .first-last-name,
+    .postal-city {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email,
+    .country,
+    .first,
+    .last,
+    .company,
+    .number,
+    .street,
+    .post,
+    .city,
+    .phone,
+    .voucher {
+        max-width: 300px;
+    }
+
+
+    .payment-5-steps {
+        gap: 30px;
+        max-width: 450px;
+    }
+
+    hr {
+        position: absolute;
+        top: 25px;
+        width: 90%;
+    }
+}
+
 @media(min-width: 701px) {
     .fa-bars {
         display: none;
+    }
+}
+
+@media(max-width: 400px) {
+    .logo {
+        max-width: 100px;
+    }
+
+    header {
+        padding: 10px 10px;
     }
 }

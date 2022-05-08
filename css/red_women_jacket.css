@@ -76,8 +76,6 @@ main {
     top: 50px;
 }
 
-
-
 .jacket {
     margin-right: 100px;
 }
@@ -95,15 +93,12 @@ main {
     margin: 20px
 }
 
-
 .product_specific {
     position: relative;
     max-width: 500px;
     border: 2px solid #42453E;
     padding: 0px 40px;
 }
-
-
 
 h2 {
     margin-bottom: 10px;
@@ -172,53 +167,29 @@ span {
 
 footer {
     color: #42453E;
-    padding: 10px;
+    padding: 20px 0px;
     margin-bottom: 0px;
     text-align: center;
 }
 
-
-
-
-@media(max-width: 700px) {
-    body {
-        background-position-x: 65%;
+@media(max-width: 1050px) {
+    .product_specific {
+        max-width: 400px;
+        padding: 0px 20px;
     }
 
-    header {
-        background-color: rgba(0, 0, 0, 0.2);
-        width: 100%;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .fa-magnifying-glass {
-        font-size: 23px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .shopping_cart {
-        margin-right: 5px;
+    .jacket {
+        margin-right: 50px;
     }
 }
 
-@media(min-width: 701px) {
-    .fa-bars {
-        display: none;
-    }
-
-    .fa-magnifying-glass {
-        font-size: 23px;
-        right: 50px;
-    }
-}
-
-@media(max-width: 849px) {
+@media(max-width: 950px) {
     .search {
-        display: none;
+        max-width: 150px;
+    }
+
+    nav li {
+        padding-left: 20px;
     }
 }
 
@@ -238,20 +209,72 @@ footer {
     }
 }
 
-@media(max-width: 950px) {
-    body {
-        background-position-x: 60%
-    }
-
+@media(max-width: 849px) {
     .search {
-        max-width: 150px;
+        display: none;
     }
 
-    nav li {
-        padding-left: 20px;
+    .description p {
+        display: none;
     }
 
-    h1 {
-        font-size: 80px;
+    .jacket {
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 800px) {
+    .rectangles img {
+        max-width: 30px;
+    }
+
+    .cta_add-to-cart {
+        font-size: 1em;
+        padding: 12px 30px;
+    }
+}
+
+@media(max-width: 710px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        border-bottom: #637176 1px solid;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 23px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .shopping_cart {
+        margin-right: 5px;
+    }
+
+    .product-page {
+        flex-direction: column;
+    }
+
+    .rectangles img {
+        max-width: 50px;
+    }
+
+    .jacket {
+        width: 100%;
+        margin: auto;
+        align-self: center;
+    }
+}
+
+@media(min-width: 711px) {
+    .fa-bars {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 23px;
+        right: 50px;
     }
 }

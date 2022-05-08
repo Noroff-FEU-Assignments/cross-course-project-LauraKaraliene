@@ -94,7 +94,6 @@ main {
     flex-direction: row;
     justify-content: left;
     top: 30px;
-    margin-left: 240px;
 }
 
 .women_main a {
@@ -117,30 +116,26 @@ footer {
     text-align: center;
 }
 
-
-
-@media(max-width: 700px) {
-    body {
-        background-color: white;
-        background-image: none;
+@media(max-width: 1000px) {
+    main {
+        margin-bottom: 350px
     }
 
-    nav {
-        display: none;
+    nav li {
+        padding-left: 20px;
     }
 
+}
+
+@media(max-width: 950px) {
     .search_women {
-        max-width: 100px;
+        max-width: 150px;
     }
+}
 
-    .fa-magnifying-glass {
-        font-size: 23px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .shopping_cart {
-        margin-right: 5px;
+@media(max-width: 800px) {
+    .search_women {
+        display: none;
     }
 }
 
@@ -154,39 +149,86 @@ footer {
         right: 50px;
     }
 
+    main {
+        padding-left: 50px;
+    }
 
-
-}
-
-@media(max-width: 849px) {
-    .search_women {
+    h2 {
         display: none;
     }
 
-    .women_main {
-        top: 15px;
-        margin-left: 100px;
+    .social-media {
+        display: none;
     }
 }
 
-
-
-@media(max-width: 1000px) {
+@media(max-width: 700px) {
     body {
-        background-position-x: 60%
+        background-color: white;
+        background-image: none;
     }
 
-    main {
-        margin-bottom: 350px
+    header {
+        border-bottom: 1px solid #707070;
     }
 
-    .search {
-        max-width: 150px;
+    nav {
+        display: none;
     }
 
-    nav li {
-        padding-left: 20px;
+    .fa-magnifying-glass {
+        font-size: 23px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
+    .shopping_cart {
+        margin-right: 5px;
+    }
 
+    h2 {
+        color: #84532C;
+        padding-left: 15px;
+    }
+
+    .women_main {
+        position: relative;
+        flex-direction: column;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .women {
+        padding-left: 45px;
+        border-bottom: #707070 1px solid;
+        padding-bottom: 20px;
+    }
+
+    .outlet {
+        border-bottom: none;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #42453E;
+        padding: 5px;
+    }
+}
+
+@media(max-width: 400px) {
+    .logo {
+        max-width: 100px;
+    }
+
+    header {
+        padding: 10px 10px;
+    }
 }

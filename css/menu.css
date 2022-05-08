@@ -1,0 +1,158 @@
+body {
+    background: white;
+    font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 30px;
+    border-bottom: #707070 solid 1px;
+}
+
+.logo {
+    max-width: 180px;
+}
+
+.search_cart_bar {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.search_menu {
+    position: relative;
+    border: 2px solid #42453E;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 1px;
+    min-width: 100px;
+    max-width: 150px;
+    height: 20px;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    top: 10%;
+    right: 70px;
+    color: #42453E;
+    font-size: 20px;
+}
+
+.shopping_cart {
+    height: 25px;
+    padding: 0px 10px;
+}
+
+.fa-bars {
+    position: relative;
+    color: #42453E;
+    font-size: 25px;
+}
+
+main {
+    position: relative;
+    flex: 1;
+    background-color: white;
+}
+
+.menu_main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    top: 15px;
+    margin-left: auto;
+    width: 100%;
+}
+
+.menu {
+    padding-left: 35px;
+    border-bottom: #707070 1px solid;
+    padding-bottom: 20px;
+
+}
+
+.menu_main a {
+    display: block;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #42453E;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    color: #84532C;
+}
+
+.subscribe {
+    border-bottom: none;
+}
+
+.subscribe-email {
+    border: 0;
+    border-bottom: #42453E 1px solid;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 0.8em;
+    color: #4B4F46;
+}
+
+.cta_subscribe {
+    border: 0;
+    border-bottom: #42453E 1px solid;
+    background-color: white;
+}
+
+.subscribe {
+    text-align: left;
+}
+
+footer {
+    color: #42453E;
+    padding: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px
+}
+
+
+@media(max-width: 400px) {
+    .logo {
+        max-width: 100px;
+    }
+
+    header {
+        padding: 10px 10px;
+    }
+}
+
+@media(max-width: 500px) {
+    .search_menu {
+        display: none;
+    }
+}

@@ -6,59 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rain jackets for different outdoor activities that enriches people's lives" />
-    <title>Rainy Days | Men</title>
+    <title>Rainy Days | Women</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/00edcf15e0.js" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/men.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
 </head>
 
 <body>
     <header>
         <a href="index.html"><img src="../images/Rainydays-white-logo-grey.png" alt="website logo" class="logo" /></a>
-
-        <nav>
-            <ul>
-                <li><a href="women.html">Women</a></li>
-                <li><a href="men.html" class="current">Men</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
         <div class="search_cart_bar">
-            <input type="text" class="search_men">
+            <input type="text" class="search_menu">
             <i class="fa-solid fa-magnifying-glass"></i>
             <img src="../images/ic_shopping_cart_black_24px.png" alt="shoping cart" class="shopping_cart">
-            <a href="menu.html"><i class="fa-solid fa-bars"></i></a>
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
     <main>
-        <section class="men_main">
-            <div class="back">
-                <a href="menu.html">
-                    <h2>
-                        < Men</h2>
-                </a>
+
+        <section class="menu_main">
+            <div class="shop menu">
+                <h2>Shop</h2>
+                <a href="../products/jackets.html">News</a>
+                <a href="../women.html">Women</a>
+                <a href="../men.html">Men</a>
+                <a href="../products/jackets.html">Outlet</a>
             </div>
-            <div class="men news">
-                <h3>News</h3>
-                <a href="../products/jackets.html">Fall/Winter</a>
-                <a href="../products/jackets.html">Spring/Summer</a>
-                <a href="../products/jackets.html">Shop all women</a>
+            <div class="about menu">
+                <h2>About us</h2>
+                <a href="../about.html">History</a>
+                <a href="../about.html">Eco Statement</a>
             </div>
-            <div class="men jackets">
-                <h3>Jackets</h3>
-                <a href="../products/jackets.html">Winter Jackets</a>
-                <a href="../products/jackets.html">Summer Jackets</a>
-                <a href="../products/jackets.html">Parka Jackets</a>
-                <a href="../products/jackets.html">Coats</a>
-                <a href="../products/jackets.html">Shop All</a>
+            <div class="help menu">
+                <h2>Need help?</h2>
+                <a href="../contact.html">Customer service</a>
+                <a href="../contact.html">Contact us</a>
+                <a href="../contact.html">FAQ</a>
             </div>
-            <div class="men outlet">
-                <h3>Outlet</h3>
-                <a href="../products/jackets.html">All men's/women's</a>
+            <div class="subscribe menu">
+                <h2>Subscribe</h2>
+                <div>
+                    <input type="email" placeholder="E-mail" name="subscribe-email" class="subscribe-email" required>
+                    <input type="submit" name="submit" value=">" class="cta_subscribe" />
+                </div>
+                <div>
+                    <input type="checkbox" name="subscribe-agree" id="subscribe-agree" required>
+                    <label for="subscribe-agree">I agree to the Rainy Days Privacy Policy</label>
+                </div>
             </div>
         </section>
     </main>

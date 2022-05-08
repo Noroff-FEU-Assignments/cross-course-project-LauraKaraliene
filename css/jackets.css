@@ -43,6 +43,19 @@ nav a:hover {
     margin-top: 10px;
 }
 
+.search {
+    position: relative;
+    border: 2px solid #42453E;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 1 px;
+    min-width: 100 px;
+    max-width: 150 px;
+    height: 20 px;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+}
+
 .fa-magnifying-glass {
     position: absolute;
     top: 10%;
@@ -114,30 +127,50 @@ footer {
     text-align: center;
 }
 
-@media(max-width: 700px) {
-    body {
-        background-position-x: 65%;
+
+@media(max-width: 1500px) {
+    main img {
+        max-width: 200px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .search {
+        max-width: 150px;
     }
 
-    header {
-        background-color: rgba(0, 0, 0, 0.2);
-        width: 100%;
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px
     }
 
-    nav {
+    main img {
+        max-width: 180px;
+    }
+
+    nav li {
+        padding-left: 20px;
+    }
+}
+
+@media(max-width: 949px) {
+    .search {
         display: none;
     }
 
-    .fa-magnifying-glass {
-        font-size: 23px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .shopping_cart {
-        margin-right: 5px;
+    main img {
+        max-width: 150px;
     }
 }
+
+@media(max-width: 800px) {
+    .option {
+        margin-right: 10px;
+        padding: 5px;
+        min-width: 100px;
+    }
+}
+
 
 @media(min-width: 701px) {
     .fa-bars {
@@ -148,44 +181,48 @@ footer {
         font-size: 23px;
         right: 50px;
     }
-}
 
-@media(max-width: 849px) {
-    .search {
+    .social-media {
         display: none;
     }
 }
 
-@media(min-width: 850px) {
-    .search {
-        position: relative;
-        border: 2px solid;
-        background: rgba(0, 0, 0, 0);
-        border-radius: 1px;
-        min-width: 100px;
-        max-width: 150px;
-        height: 20px;
-        width: 100%;
-        font-size: 18px;
-        color: #42453E;
-        outline: none;
+@media(max-width: 700px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px
     }
+
+    nav {
+        display: none;
+    }
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        display: none;
+    }
+
+    .option {
+        margin-bottom: 10px;
+    }
+
+    .jacket {
+        width: 100%;
+        margin: 0px;
+    }
+
 }
 
-@media(max-width: 950px) {
-    body {
-        background-position-x: 60%
+@media(max-width: 400px) {
+    .logo {
+        max-width: 100px;
     }
 
-    .search {
-        max-width: 150px;
-    }
-
-    nav li {
-        padding-left: 20px;
-    }
-
-    h1 {
-        font-size: 80px;
+    header {
+        padding: 10px 10px;
     }
 }
