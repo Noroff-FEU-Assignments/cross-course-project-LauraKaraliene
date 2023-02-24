@@ -9,8 +9,8 @@ body {
 
   margin: 10px 30px;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/Fitting\ softshell\ coat\ in\ a\ store.\ Fashion\ conception.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../images/Fitting.png);
 }
 
 header {
