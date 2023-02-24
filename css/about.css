@@ -1,259 +1,273 @@
 body {
-    background: no-repeat center center fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 30px;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Fitting\ softshell\ coat\ in\ a\ store.\ Fashion\ conception.jpeg);
+  background: no-repeat center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Lucida Grande", "Montserrat", "Avenir", Verdana, "Lucida Sans",
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px 30px;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/Fitting\ softshell\ coat\ in\ a\ store.\ Fashion\ conception.jpeg);
 }
 
-
 header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
-    padding: 5px;
-    margin-top: 33px;
+  padding: 5px;
+  margin-top: 33px;
 }
 
 nav li {
-    display: inline;
-    padding-left: 50px;
+  display: inline;
+  padding-left: 50px;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .logo {
-    max-width: 180px;
+  max-width: 180px;
 }
 
 .search_cart_bar {
-    display: flex;
-    position: relative;
-    margin-left: auto;
-    margin-top: 10px;
-
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-top: 10px;
 }
 
 .fa-magnifying-glass {
-    position: absolute;
-    top: 10%;
-    right: 60px;
-    color: white;
-    font-size: 20px;
+  position: absolute;
+  top: 10%;
+  right: 60px;
+  color: white;
+  font-size: 20px;
 }
 
 .shopping_cart {
-    height: 25px;
-    padding: 0px 10px;
+  height: 25px;
+  padding: 0px 10px;
 }
 
 .fa-bars {
-    position: relative;
-    color: white;
-    font-size: 25px;
+  position: relative;
+  color: white;
+  font-size: 25px;
 }
 
 main {
-    position: relative;
-    flex: 1;
+  position: relative;
+  flex: 1;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  margin: 70px auto;
+  align-items: center;
+  max-width: 850px;
 }
 
 .about_descriptions {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    bottom: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 120px;
 }
 
 .about {
-    position: relative;
-    display: block;
-    border: 1px solid white;
-    border-radius: 7px;
-    padding: 5px 10px;
-    margin: 20px;
-    text-align: center;
-    min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 15px 10px;
+  margin: 0px;
+  text-align: center;
+  max-width: 300px;
 }
 
 .icon {
-    max-width: 60px;
+  max-width: 60px;
 }
 
 .search {
-    position: relative;
-    border: 2px solid white;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 1px;
-    min-width: 100px;
-    max-width: 150px;
-    height: 20px;
-    width: 100%;
-    font-size: 18px;
-    color: white;
-    outline: none;
+  position: relative;
+  border: 2px solid white;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 1px;
+  min-width: 100px;
+  max-width: 150px;
+  height: 20px;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  outline: none;
 }
 
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 20px;
+  margin-bottom: 80px;
+  max-width: 600px;
+}
+
+h1,
 h2 {
-    font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, sans-serif;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    margin: 10px;
+  font-family: "Lucida Grande", "Montserrat", "Avenir", Verdana, sans-serif;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  margin: 10px;
 }
 
 p {
-    color: white;
-    padding: 15px;
+  color: white;
+  padding: 15px;
 }
 
 footer {
-    color: white;
-    padding: 10px;
-    margin-bottom: 0px;
-    text-align: center;
-
+  color: white;
+  padding: 10px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
-@media(max-width: 1550px) {
-    .about_descriptions {
-        bottom: 300px;
-    }
+@media (max-width: 1550px) {
+  .about_descriptions {
+    bottom: 300px;
+  }
 }
 
-@media(max-width: 1400px) {
-    .about_descriptions {
-        bottom: 200px;
-    }
+@media (max-width: 1400px) {
+  .about_descriptions {
+    bottom: 200px;
+  }
 }
 
-@media(max-width: 1100px) {
-    .about_descriptions {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 25px;
-        margin-top: 40px;
-        bottom: auto;
-        margin-bottom: 20px;
-    }
+@media (max-width: 1100px) {
+  .about_descriptions {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin-top: 40px;
+    bottom: auto;
+    margin-bottom: 20px;
+  }
 }
 
+@media (max-width: 950px) {
+  body {
+    background-position-x: 60%;
+  }
 
-@media(max-width: 950px) {
-    body {
-        background-position-x: 60%
-    }
+  .search {
+    max-width: 150px;
+  }
 
-    .search {
-        max-width: 150px;
-    }
-
-    nav li {
-        padding-left: 20px;
-    }
-
+  nav li {
+    padding-left: 20px;
+  }
 }
 
-
-
-@media(max-width: 849px) {
-    .search {
-        display: none;
-    }
+@media (max-width: 849px) {
+  .search {
+    display: none;
+  }
 }
 
-@media(max-width: 800px) {
-    .about_descriptions {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 25px;
-        margin-top: 40px;
-        bottom: auto;
-        margin-bottom: 20px;
-        max-width: 500px;
-        align-content: center;
-        margin-left: 100px;
-    }
+@media (max-width: 800px) {
+  .about_descriptions {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+    margin-top: 40px;
+    bottom: auto;
+    margin-bottom: 20px;
+    max-width: 500px;
+    align-content: center;
+    margin-left: 100px;
+  }
 }
 
-@media(max-width: 700px) {
-    body {
-        background-position-x: 65%;
-    }
+@media (max-width: 700px) {
+  body {
+    background-position-x: 65%;
+  }
 
-    nav {
-        display: none;
-    }
+  nav {
+    display: none;
+  }
 
-    .fa-magnifying-glass {
-        font-size: 23px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  .fa-magnifying-glass {
+    font-size: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-    .shopping_cart {
-        margin-right: 5px;
-    }
+  .shopping_cart {
+    margin-right: 5px;
+  }
 
-    .about {
-        max-width: 300px;
-        align-items: center;
-    }
+  .about {
+    max-width: 300px;
+    align-items: center;
+  }
 
-    main {
-        margin-bottom: 30px;
-    }
+  main {
+    margin-bottom: 30px;
+  }
 }
 
-@media(min-width: 701px) {
-    .fa-bars {
-        display: none;
-    }
+@media (min-width: 701px) {
+  .fa-bars {
+    display: none;
+  }
 
-    .fa-magnifying-glass {
-        font-size: 23px;
-        right: 50px;
-    }
+  .fa-magnifying-glass {
+    font-size: 23px;
+    right: 50px;
+  }
 }
 
-@media(max-width: 600px) {
-    .about_descriptions {
-        margin-left: 50px;
-    }
+@media (max-width: 600px) {
+  .about_descriptions {
+    margin-left: 50px;
+  }
 }
 
-@media(max-width: 500px) {
-    .about_descriptions {
-        margin-left: 30px;
-    }
+@media (max-width: 500px) {
+  .about_descriptions {
+    margin-left: 30px;
+  }
 
-    h2 {
-        font-size: 2em
-    }
+  h2 {
+    font-size: 2em;
+  }
 }
 
-@media(max-width: 400px) {
-    .logo {
-        max-width: 100px;
-    }
+@media (max-width: 400px) {
+  .logo {
+    max-width: 100px;
+  }
 
-    header {
-        padding: 10px 10px;
-    }
+  header {
+    padding: 10px 10px;
+  }
 }

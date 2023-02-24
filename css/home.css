@@ -1,221 +1,215 @@
 body {
-    background: url(../images/prototype-home-pic-darken.png) no-repeat center center fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 25%;
-    font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 30px;
-    min-height: 100vh;
+  background: url(../images/prototype-home-pic-darken.png) no-repeat center
+    center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 25%;
+  font-family: "Lucida Grande", "Montserrat", "Avenir", Verdana, "Lucida Sans",
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px 0px 30px;
+  min-height: 98vh;
 }
 
 .home_h1 {
-    margin-bottom: 50px;
-    position: absolute;
-    bottom: 10px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  position: absolute;
+  bottom: 10px;
 }
 
 h1 {
-    font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, sans-serif;
-    text-align: left;
-    color: white;
-    font-weight: bold;
-    font-size: 100px;
+  font-family: "Lucida Grande", "Montserrat", "Avenir", Verdana, sans-serif;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
 }
 
 header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
-    padding: 5px;
-    margin-top: 33px;
+  padding: 5px;
+  margin-top: 33px;
 }
 
 nav li {
-    display: inline;
-    padding-left: 50px;
+  display: inline;
+  padding-left: 50px;
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .logo {
-    max-width: 180px;
+  max-width: 180px;
 }
 
 .search_cart_bar {
-    display: flex;
-    position: relative;
-    margin-left: auto;
-    margin-top: 10px;
-
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-top: 10px;
 }
 
 .fa-magnifying-glass {
-    position: absolute;
-    top: 10%;
-    right: 60px;
-    color: white;
-    font-size: 20px;
+  position: absolute;
+  top: 10%;
+  right: 60px;
+  color: white;
+  font-size: 20px;
 }
 
 .shopping_cart {
-    height: 25px;
-    padding: 0px 10px;
+  height: 25px;
+  padding: 0px 10px;
 }
 
 .fa-bars {
-    position: relative;
-    color: white;
-    font-size: 25px;
+  position: relative;
+  color: white;
+  font-size: 25px;
 }
 
 main {
-    position: relative;
-    flex: 1;
+  position: relative;
+  flex: 1;
 }
 
-
-
 .slogan {
-    display: block;
+  display: block;
 }
 
 .cta_read-more {
-    font-family: 'montserrat';
-    font-weight: bold;
-    color: white;
-    background-color: none;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5em;
-    border: 3px solid white;
-    border-radius: 15px;
-    padding: 8px 45px;
+  font-family: "montserrat";
+  font-weight: bold;
+  color: white;
+  background-color: none;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5em;
+  border: 3px solid white;
+  border-radius: 15px;
+  padding: 8px 45px;
 }
 
 .cta_read-more:hover {
-    border: 5px solid white;
-    text-decoration: none;
+  border: 5px solid white;
+  text-decoration: none;
 }
 
 footer {
+  color: white;
+  padding: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background-position-x: 65%;
+  }
+
+  header {
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .shopping_cart {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 701px) {
+  .fa-bars {
+    display: none;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 23px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 849px) {
+  .search {
+    display: none;
+  }
+}
+
+@media (min-width: 850px) {
+  .search {
+    position: relative;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 1px;
+    min-width: 100px;
+    max-width: 150px;
+    height: 20px;
+    width: 100%;
+    font-size: 18px;
     color: white;
-    padding: 10px;
-    margin-bottom: 0px;
-    text-align: center;
+    outline: none;
+  }
 }
 
+@media (max-width: 950px) {
+  body {
+    background-position-x: 60%;
+  }
 
-@media(max-width: 400px) {
-    h1 {
-        font-size: 40px;
-    }
+  .search {
+    max-width: 150px;
+  }
 
-    .logo {
-        max-width: 100px;
-    }
+  nav li {
+    padding-left: 20px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
 }
 
-
-@media(max-width: 500px) {
-    h1 {
-        font-size: 50px;
-    }
-}
-
-
-@media(max-width: 700px) {
-    body {
-        background-position-x: 65%;
-
-    }
-
-    header {
-        border-bottom: 1px solid white;
-        width: 100%;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .fa-magnifying-glass {
-        font-size: 23px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .shopping_cart {
-        margin-right: 5px;
-    }
-}
-
-@media(min-width: 701px) {
-    .fa-bars {
-        display: none;
-    }
-
-    .fa-magnifying-glass {
-        font-size: 23px;
-        right: 50px;
-    }
-}
-
-@media(max-width: 849px) {
-    .search {
-        display: none;
-    }
-}
-
-@media(min-width: 850px) {
-    .search {
-        position: relative;
-        border: 2px solid white;
-        background: rgba(0, 0, 0, 0);
-        border-radius: 1px;
-        min-width: 100px;
-        max-width: 150px;
-        height: 20px;
-        width: 100%;
-        font-size: 18px;
-        color: white;
-        outline: none;
-    }
-
-
-}
-
-@media(max-width: 950px) {
-    body {
-        background-position-x: 60%
-    }
-
-    .search {
-        max-width: 150px;
-    }
-
-    nav li {
-        padding-left: 20px;
-    }
-
-    h1 {
-        font-size: 60px;
-    }
-}
-
-@media(min-width: 1300px) {
-    h1 {
-        font-size: 80px;
-    }
+@media (min-width: 1300px) {
+  h1 {
+    font-size: 80px;
+  }
 }

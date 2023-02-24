@@ -1,19 +1,39 @@
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw0aXx-p7K4KLjztg.woff) format('woff');
-    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/montserrat/v23/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw0aXx-p7K4KLjztg.woff)
+    format("woff");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .current {
-    text-decoration: underline;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* women/men page*/
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }

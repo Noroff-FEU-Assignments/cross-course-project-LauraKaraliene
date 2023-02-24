@@ -1,234 +1,233 @@
 body {
-    background: no-repeat center center fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: 25%;
-    font-family: 'Lucida Grande', 'Montserrat', 'Avenir', Verdana, 'Lucida Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/prototype-home-pic-darken.png);
+  background: no-repeat center center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 25%;
+  font-family: "Lucida Grande", "Montserrat", "Avenir", Verdana, "Lucida Sans",
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/prototype-home-pic-darken.png);
 }
 
-
 header {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 30px;
 }
 
 nav ul {
-    padding: 5px;
-    margin-top: 33px;
+  padding: 5px;
+  margin-top: 33px;
 }
 
 nav li {
-    display: inline;
-    padding-left: 50px;
+  display: inline;
+  padding-left: 50px;
 }
 
 a {
-    text-decoration: none;
-    color: #42453E;
+  text-decoration: none;
+  color: #42453e;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .logo {
-    max-width: 180px;
+  max-width: 180px;
 }
 
 .search_cart_bar {
-    display: flex;
-    position: relative;
-    margin-left: auto;
-    margin-top: 10px;
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-top: 10px;
 }
 
 .search_women {
-    position: relative;
-    border: 2px solid #42453E;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 1 px;
-    min-width: 100 px;
-    max-width: 150 px;
-    height: 20 px;
-    width: 100%;
-    font-size: 18px;
-    outline: none;
+  position: relative;
+  border: 2px solid #42453e;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 1 px;
+  min-width: 100 px;
+  max-width: 150 px;
+  height: 20 px;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
 }
 
 .fa-magnifying-glass {
-    position: absolute;
-    top: 10%;
-    right: 60px;
-    color: #42453E;
-    font-size: 20px;
+  position: absolute;
+  top: 10%;
+  right: 60px;
+  color: #42453e;
+  font-size: 20px;
 }
 
 .shopping_cart {
-    height: 25px;
-    padding: 0px 10px;
+  height: 25px;
+  padding: 0px 10px;
 }
 
 .fa-bars {
-    position: relative;
-    color: #42453E;
-    font-size: 25px;
+  position: relative;
+  color: #42453e;
+  font-size: 25px;
 }
 
 main {
-    position: relative;
-    flex: 1;
-    background-color: white;
-    margin-bottom: 500px;
+  position: relative;
+  flex: 1;
+  background-color: white;
+  margin-bottom: 500px;
 }
 
 .women_main {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  top: 30px;
 }
 
 .women_main a {
-    display: block;
-    font-size: 1em;
+  display: block;
+  font-size: 1em;
 }
 
 .women {
-    padding-right: 60px;
+  padding-right: 60px;
 }
 
 h3 {
-    color: #42453E;
+  color: #42453e;
 }
 
 footer {
-    color: white;
-    padding: 10px;
-    margin-bottom: 0px;
-    text-align: center;
+  color: white;
+  padding: 10px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
-@media(max-width: 1000px) {
-    main {
-        margin-bottom: 350px
-    }
+@media (max-width: 1000px) {
+  main {
+    margin-bottom: 350px;
+  }
 
-    nav li {
-        padding-left: 20px;
-    }
-
+  nav li {
+    padding-left: 20px;
+  }
 }
 
-@media(max-width: 950px) {
-    .search_women {
-        max-width: 150px;
-    }
+@media (max-width: 950px) {
+  .search_women {
+    max-width: 150px;
+  }
 }
 
-@media(max-width: 800px) {
-    .search_women {
-        display: none;
-    }
+@media (max-width: 800px) {
+  .search_women {
+    display: none;
+  }
 }
 
-@media(min-width: 701px) {
-    .fa-bars {
-        display: none;
-    }
+@media (min-width: 701px) {
+  .fa-bars {
+    display: none;
+  }
 
-    .fa-magnifying-glass {
-        font-size: 23px;
-        right: 50px;
-    }
+  .fa-magnifying-glass {
+    font-size: 23px;
+    right: 50px;
+  }
 
-    main {
-        padding-left: 50px;
-    }
+  main {
+    padding-left: 50px;
+  }
 
-    h2 {
-        display: none;
-    }
+  h2 {
+    display: none;
+  }
 
-    .social-media {
-        display: none;
-    }
+  .social-media {
+    display: none;
+  }
 }
 
-@media(max-width: 700px) {
-    body {
-        background-color: white;
-        background-image: none;
-    }
+@media (max-width: 700px) {
+  body {
+    background-color: white;
+    background-image: none;
+  }
 
-    header {
-        border-bottom: 1px solid #707070;
-    }
+  header {
+    border-bottom: 1px solid #707070;
+  }
 
-    nav {
-        display: none;
-    }
+  nav {
+    display: none;
+  }
 
-    .fa-magnifying-glass {
-        font-size: 23px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  .fa-magnifying-glass {
+    font-size: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
-    .shopping_cart {
-        margin-right: 5px;
-    }
+  .shopping_cart {
+    margin-right: 5px;
+  }
 
-    h2 {
-        color: #84532C;
-        padding-left: 15px;
-    }
+  h2 {
+    color: #84532c;
+    padding-left: 15px;
+  }
 
-    .women_main {
-        position: relative;
-        flex-direction: column;
-        margin-left: auto;
-        width: 100%;
-    }
+  .women_main {
+    position: relative;
+    flex-direction: column;
+    margin-left: auto;
+    width: 100%;
+  }
 
-    .women {
-        padding-left: 45px;
-        border-bottom: #707070 1px solid;
-        padding-bottom: 20px;
-    }
+  .women {
+    padding-left: 10px;
+    border-bottom: #707070 1px solid;
+    padding-bottom: 20px;
+  }
 
-    .outlet {
-        border-bottom: none;
-    }
+  .outlet {
+    border-bottom: none;
+  }
 
-    .social-media {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-    footer div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: #42453E;
-        padding: 5px;
-    }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #42453e;
+    padding: 5px;
+  }
 }
 
-@media(max-width: 400px) {
-    .logo {
-        max-width: 100px;
-    }
+@media (max-width: 400px) {
+  .logo {
+    max-width: 100px;
+  }
 
-    header {
-        padding: 10px 10px;
-    }
+  header {
+    padding: 10px 10px;
+  }
 }
