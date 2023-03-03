@@ -31,9 +31,41 @@ nav a:hover {
 }
 
 /* women/men page*/
-
 .title {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+/* button cart/checkout pages*/
+.checkout-form-button,
+.cart-button {
+  padding: 7px;
+  margin: 5px 12px;
+  border: #5e8871 solid 2px;
+  border-radius: 10px;
+  width: 120px;
+  text-align: center;
+  background-color: white;
+  font-family: "lucida grande";
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #5e8871;
+}
+
+.cart-button a {
+  text-decoration: none;
+  color: #5e8871;
+}
+
+.checkout-form-button:hover,
+.cart-button:hover {
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+.checkout-form-button:active,
+.cart-button:active {
+  color: white;
+  background-color: #5e8871;
 }

@@ -144,7 +144,7 @@ form {
   max-width: 150px;
 }
 
-button {
+/* button {
   padding: 7px;
   margin: 5px 12px;
   border: #5e8871 solid 2px;
@@ -166,7 +166,7 @@ button:hover {
 button:active {
   color: white;
   background-color: #5e8871;
-}
+} */
 
 ::placeholder {
   color: #989d9f;
