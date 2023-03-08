@@ -105,8 +105,10 @@ main {
 }
 
 .cta_read-more:hover {
-  border: 5px solid white;
   text-decoration: none;
+  background-color: white;
+  color: #42453e;
+  font-weight: bolder;
 }
 
 footer {

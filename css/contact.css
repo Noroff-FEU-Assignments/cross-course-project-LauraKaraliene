@@ -129,8 +129,7 @@ h1 {
 .form__input {
   display: block;
   padding: 8px;
-  margin: 12px;
-  margin-left: 0px;
+  margin: 12px auto;
   border: #42453e solid 1px;
   border-radius: 10px;
   min-width: 300px;
@@ -141,7 +140,7 @@ label {
 }
 
 .cta_contact {
-  min-width: 300px;
+  width: 200px;
   padding: 5px;
   border: #42453e 1px solid;
   border-radius: 10px;
@@ -149,6 +148,7 @@ label {
   font-weight: bold;
   background-color: #c8d2d3;
   margin: 30px auto;
+  display: block;
 }
 
 footer {

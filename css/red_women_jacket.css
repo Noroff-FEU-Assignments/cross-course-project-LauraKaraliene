@@ -106,7 +106,6 @@ main {
   display: flex;
   flex-direction: row;
   margin-top: 15px;
-  /* width: 450px; */
 }
 
 .jacket-info {
@@ -161,6 +160,7 @@ span {
 
 .size_M {
   text-decoration: underline;
+  text-underline-offset: 5px;
   font-weight: bold;
 }
 
@@ -170,6 +170,17 @@ span {
 }
 
 .cta_add-to-cart {
+  background-color: white;
+  font-weight: bold;
+  color: #8c3134;
+  text-align: center;
+  border: 2px solid #8c3134;
+  border-radius: 15px;
+  padding: 12px 50px;
+}
+
+.cta_add-to-cart:hover {
+  text-decoration: none;
   background-color: #8c3134;
   font-weight: bolder;
   color: white;
@@ -179,14 +190,7 @@ span {
   padding: 12px 50px;
 }
 
-.cta_add-to-cart:hover {
-  text-decoration: none;
-  background-color: white;
-  color: #8c3134;
-  font-weight: bolder;
-  border: 2px solid #8c3134;
-  border-radius: 15px;
-  padding: 12px 50px;
+.cta_add-to-cart::after {
 }
 
 .description {
