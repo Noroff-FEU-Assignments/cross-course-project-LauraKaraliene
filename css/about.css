@@ -119,6 +119,7 @@ main {
 .welcome-text {
   display: flex;
   flex-direction: column;
+  text-align: center;
   border: 1px solid white;
   border-radius: 7px;
   padding: 20px;
@@ -196,13 +197,13 @@ footer {
   .about_descriptions {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 25px;
-    margin-top: 40px;
-    bottom: auto;
-    margin-bottom: 20px;
+    margin: 30px auto;
     max-width: 500px;
     align-content: center;
-    margin-left: 100px;
+  }
+
+  .welcome-text {
+    max-width: 400px;
   }
 }
 
@@ -246,17 +247,8 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
-  .about_descriptions {
-    margin-left: 50px;
-  }
-}
-
 @media (max-width: 500px) {
-  .about_descriptions {
-    margin-left: 30px;
-  }
-
+  h1,
   h2 {
     font-size: 2em;
   }

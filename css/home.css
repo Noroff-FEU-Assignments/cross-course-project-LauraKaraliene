@@ -130,11 +130,11 @@ footer {
 
 @media (max-width: 500px) {
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   body {
     background-position-x: 65%;
   }
@@ -157,9 +157,13 @@ footer {
   .shopping_cart {
     margin-right: 5px;
   }
+
+  .home_h1 {
+    margin-left: 20px;
+  }
 }
 
-@media (min-width: 701px) {
+@media (min-width: 751px) {
   .fa-bars {
     display: none;
   }
@@ -205,6 +209,12 @@ footer {
     padding-left: 20px;
   }
 
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 951px) {
   h1 {
     font-size: 60px;
   }

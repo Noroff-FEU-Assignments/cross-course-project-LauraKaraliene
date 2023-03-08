@@ -138,7 +138,7 @@ footer {
   }
 }
 
-@media (min-width: 701px) {
+@media (min-width: 751px) {
   .fa-bars {
     display: none;
   }
@@ -161,7 +161,7 @@ footer {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   body {
     background-color: white;
     background-image: none;

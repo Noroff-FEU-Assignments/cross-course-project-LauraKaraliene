@@ -192,6 +192,11 @@ input {
   margin: 40px auto;
 }
 
+.cart-button a {
+  text-decoration: none;
+  color: #1d9a55;
+}
+
 .shipping-info {
   margin-top: 30px;
 }

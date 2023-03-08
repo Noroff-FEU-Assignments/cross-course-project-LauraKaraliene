@@ -139,16 +139,23 @@ label {
   font-size: 0.6em;
 }
 
-.cta_contact {
+.cta-contact {
   width: 200px;
   padding: 5px;
-  border: #42453e 1px solid;
+  color: #1d9a55;
+  border: #1d9a55 2px solid;
   border-radius: 10px;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #c8d2d3;
+  background-color: white;
   margin: 30px auto;
   display: block;
+}
+
+.cta-contact:hover {
+  color: white;
+  background-color: #1d9a55;
+  font-weight: 400;
 }
 
 footer {

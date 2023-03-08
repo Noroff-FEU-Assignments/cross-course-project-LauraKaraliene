@@ -38,11 +38,18 @@ nav a:hover {
 }
 
 /* button cart/checkout pages*/
+
+/* .cart-button a {
+  text-decoration: none;
+  color: #1d9a55;
+} */
+
 .checkout-form-button,
 .cart-button {
+  text-decoration: none;
   padding: 7px;
   margin: 5px 12px;
-  border: #5e8871 solid 2px;
+  border: #1d9a55 solid 2px;
   border-radius: 10px;
   width: 120px;
   text-align: center;
@@ -50,12 +57,7 @@ nav a:hover {
   font-family: "lucida grande";
   font-size: 0.8em;
   font-weight: 500;
-  color: #5e8871;
-}
-
-.cart-button a {
-  text-decoration: none;
-  color: #5e8871;
+  color: #1d9a55;
 }
 
 .checkout-form-button:hover,
@@ -67,5 +69,5 @@ nav a:hover {
 .checkout-form-button:active,
 .cart-button:active {
   color: white;
-  background-color: #5e8871;
+  background-color: #1d9a55;
 }
