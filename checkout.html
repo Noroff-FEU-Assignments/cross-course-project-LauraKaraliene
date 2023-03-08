@@ -73,7 +73,7 @@
       <section class="checkout-main">
         <section class="checkout-left">
           <form class="form-left">
-            <h4>1. Contact information</h4>
+            <label for="firts-name">1. Contact information</label>
             <input
               type="text"
               placeholder="First name"
@@ -81,12 +81,14 @@
               class="form-input long"
               required
             />
+            <label for="last-name"></label>
             <input
               type="text"
               placeholder="Last name"
               class="form-input long"
               name="last-name"
             />
+            <label for="checkout-email"></label>
             <input
               type="email"
               placeholder="E-mail"
@@ -98,7 +100,7 @@
         </section>
         <section class="checkout-middle">
           <form class="form-middle">
-            <h4>2. Shipping address</h4>
+            <label for="first-name">2. Shipping address</label>
             <input
               type="text"
               placeholder="First name"
@@ -106,18 +108,21 @@
               class="form-input long"
               required
             />
+            <laabel for="last-name"></laabel>
             <input
               type="text"
               placeholder="Last name"
               class="form-input long"
               name="last-name"
             />
+            <label for="phone"></label>
             <input
               type="tel"
               placeholder="Phone number"
               name="phone"
               class="form-input long"
             />
+            <label for="street-house-number"></label>
             <input
               type="text"
               placeholder="Street and house number"
@@ -125,6 +130,7 @@
               class="form-input long"
               required
             />
+            <label for="postal-code"></label>
             <input
               type="text"
               placeholder="Postal code"
@@ -132,6 +138,7 @@
               class="form-input short"
               required
             />
+            <label for="city"></label>
             <input
               type="text"
               placeholder="City"
@@ -139,6 +146,7 @@
               name="city"
               required
             />
+            <label for="country"></label>
             <input
               type="text"
               placeholder="Country"
@@ -150,7 +158,7 @@
         </section>
         <section class="checkout-right">
           <form class="form-right">
-            <h4>3. Credit Card Information</h4>
+            <label for="firts-name">3. Credit Card Information</label>
             <input
               type="text"
               placeholder="Name"
@@ -158,6 +166,7 @@
               class="form-input long"
               required
             />
+            <label for="card-number"></label>
             <input
               type="text"
               placeholder="Credit card number"
@@ -165,6 +174,7 @@
               class="form-input long"
               required
             />
+            <label for="date"></label>
             <input
               type="date"
               placeholder="Expiration date"
@@ -172,6 +182,7 @@
               class="form-input short"
               required
             />
+            <label for="cvv"></label>
             <input
               type="text"
               placeholder="CVV"
@@ -184,9 +195,21 @@
         </section>
       </section>
       <div class="payment-icons">
-        <img src="images/vipps_logo_rgb.png" class="vipps" />
-        <img src="images/6220ac0f912013c51947f9c4.png" class="visa" />
-        <img src="images/6220aa3e912013c51947f9bc.png" class="klarna" />
+        <img
+          src="images/vipps_logo_rgb.png"
+          class="vipps"
+          alt="vipps payment icon"
+        />
+        <img
+          src="images/6220ac0f912013c51947f9c4.png"
+          class="visa"
+          alt="credit cards icons"
+        />
+        <img
+          src="images/6220aa3e912013c51947f9bc.png"
+          class="klarna"
+          alt="klarna payment icon"
+        />
       </div>
     </main>
     <footer>Copyright &copy; Rainy Days 2022</footer>

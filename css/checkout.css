@@ -95,38 +95,6 @@ form {
   text-align: left;
   padding: 20px;
 }
-/* hr {
-  position: absolute;
-  top: 25px;
-  width: 100%;
-} */
-
-/* .fa-check {
-  border: #8c3134 2px solid;
-  border-radius: 50%;
-  color: #8c3134;
-  padding: 2px;
-  width: 18px;
-  text-align: center;
-  background-color: white;
-} */
-
-/* .checkout-left {
-  margin-right: 50px;
-  margin-bottom: 30px;
-} */
-/* 
-.checkout-left a {
-  flex: 1;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-} */
-/* 
-.checkout-left a:hover {
-  color: #42453e;
-  font-weight: bold;
-} */
 
 .form-input {
   display: flex;
@@ -144,33 +112,14 @@ form {
   max-width: 150px;
 }
 
-/* button {
-  padding: 7px;
-  margin: 5px 12px;
-  border: #5e8871 solid 2px;
-  border-radius: 10px;
-  width: 120px;
-  text-align: center;
-  background-color: white;
-  font-family: "lucida grande";
-  font-size: 0.8em;
-  font-weight: 400;
-  color: #5e8871;
-}
-
-button:hover {
-  font-weight: bolder;
-  transition: 0.5s;
-}
-
-button:active {
-  color: white;
-  background-color: #5e8871;
-} */
-
 ::placeholder {
   color: #989d9f;
   font-size: 0.9em;
+}
+
+label {
+  text-align: center;
+  font-weight: bolder;
 }
 
 h3,
@@ -186,17 +135,6 @@ h4 {
   padding-left: 15px;
   border-bottom: #637176 solid 1px;
   margin: 10px 0px;
-}
-
-.total {
-  display: flex;
-  flex-direction: row;
-  margin: 0px 0px;
-}
-
-.total h5,
-h6 {
-  margin: 10px, 0px;
 }
 
 .payment-icons {
