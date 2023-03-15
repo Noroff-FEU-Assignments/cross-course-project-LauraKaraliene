@@ -38,12 +38,6 @@ nav a:hover {
 }
 
 /* button cart/checkout pages*/
-
-/* .cart-button a {
-  text-decoration: none;
-  color: #1d9a55;
-} */
-
 .checkout-form-button,
 .cart-button {
   text-decoration: none;
@@ -64,10 +58,30 @@ nav a:hover {
 .cart-button:hover {
   font-weight: bolder;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 .checkout-form-button:active,
 .cart-button:active {
   color: white;
   background-color: #1d9a55;
+}
+
+/* inputs */
+::placeholder {
+  color: #637176;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  margin: 30px auto;
+  padding-left: 0px;
+}
+
+.breadcrumbs a {
+  padding-right: 5px;
+  color: #637176;
+  font-weight: lighter;
+  font-size: 0.8em;
 }

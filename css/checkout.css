@@ -4,7 +4,7 @@ body {
     sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 10px 30px;
+  margin: 0px;
   min-height: 98vh;
 }
 
@@ -12,6 +12,7 @@ header {
   display: flex;
   align-items: center;
   border-bottom: #707070 solid 1px;
+  padding: 10px 30px 0px 30px;
 }
 
 nav ul {
@@ -169,9 +170,12 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  .right-voucher {
-    display: flex;
-    flex-direction: column;
+  .long {
+    min-width: 250px;
+  }
+
+  .short {
+    max-width: 150px;
   }
 }
 
@@ -181,40 +185,13 @@ footer {
   }
 }
 
-@media (min-width: 1001px) {
-  .order-summary {
-    display: none;
-  }
-}
-
 @media (max-width: 1000px) {
-  .checkout-right {
-    display: none;
+  .long {
+    min-width: 200px;
   }
 
-  .shopping_cart {
-    display: none;
-  }
-
-  .checkout-main {
-    justify-content: center;
-  }
-
-  .order-summary div {
-    display: flex;
-    flex-direction: row;
-    background-color: #e4e4e4;
-    justify-content: space-around;
-  }
-
-  .order-summary img {
-    max-height: 25px;
-    align-self: center;
-    padding-right: 10px;
-  }
-
-  .fa-magnifying-glass {
-    right: 5px;
+  .short {
+    max-width: 100px;
   }
 }
 
@@ -222,80 +199,82 @@ footer {
   nav li {
     padding-left: 20px;
   }
-
-  .checkout-main {
-    margin-right: 10px;
-  }
 }
 
 @media (max-width: 800px) {
   .search {
     max-width: 100px;
   }
-
-  main {
-    justify-content: center;
-  }
-
-  .form-left {
-    align-self: center;
-    margin: auto;
-  }
-
-  .checkout-left {
-    margin: 5px;
-    padding: 0px 5px;
-  }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 849px) {
   .search {
     display: none;
   }
 
-  .fa-magnifying-glass {
-    right: 35px;
+  .checkout-main {
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
   }
 
+  .long {
+    max-width: 300px;
+  }
+
+  .short {
+    max-width: 150px;
+  }
+
+  .checkout-form-button {
+    margin-top: 15px;
+  }
+
+  .payment-icons {
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 850px) {
+  .fa-bars {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
   nav {
     display: none;
   }
 
-  .first-last-name,
-  .postal-city {
-    display: flex;
-    flex-direction: column;
+  .fa-magnifying-glass {
+    font-size: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  .email,
-  .country,
-  .first,
-  .last,
-  .company,
-  .number,
-  .street,
-  .post,
-  .city,
-  .phone,
-  .voucher {
+  .shopping_cart {
+    margin-right: 5px;
+  }
+
+  .about {
     max-width: 300px;
+    align-items: center;
   }
 
-  .payment-5-steps {
-    gap: 30px;
-    max-width: 450px;
-  }
-
-  hr {
-    position: absolute;
-    top: 25px;
-    width: 90%;
+  main {
+    margin-bottom: 30px;
   }
 }
 
-@media (min-width: 701px) {
+@media (min-width: 751px) {
   .fa-bars {
     display: none;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 23px;
+    right: 50px;
   }
 }
 
@@ -306,5 +285,11 @@ footer {
 
   header {
     padding: 10px 10px;
+  }
+
+  .payment-icons {
+    max-width: 200px;
+    margin-bottom: 30px;
+    padding: 0px;
   }
 }
