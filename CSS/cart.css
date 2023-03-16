@@ -126,6 +126,10 @@ input {
   padding-left: 40px;
 }
 
+h4 {
+  font-weight: bold;
+}
+
 .cart-button {
   margin: 40px auto;
 }
