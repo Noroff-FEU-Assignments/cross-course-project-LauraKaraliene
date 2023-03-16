@@ -12,21 +12,6 @@ body {
   min-height: 98vh;
 }
 
-.home_h1 {
-  margin-bottom: 100px;
-  margin-left: 50px;
-  position: absolute;
-  bottom: 10px;
-}
-
-h1 {
-  font-family: "Lucida Grande", "Montserrat", "Avenir", Verdana, sans-serif;
-  text-align: left;
-  color: white;
-  font-weight: bold;
-  font-size: 100px;
-}
-
 header {
   display: flex;
   align-items: center;
@@ -86,6 +71,21 @@ nav a:hover {
 main {
   position: relative;
   flex: 1;
+}
+
+.home_h1 {
+  margin-bottom: 100px;
+  margin-left: 50px;
+  position: absolute;
+  bottom: 10px;
+}
+
+h1 {
+  font-family: "Lucida Grande", "Montserrat", "Avenir", Verdana, sans-serif;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
 }
 
 .slogan {
