@@ -1,0 +1,11 @@
+:root {
+  --home-about-text-colour: white;
+  --text-colour: #42453e;
+  --background-colour: white;
+  --background-colour-cart: #cfd7d9;
+  --cta-send-checkout-colour: #39b16f;
+  --cta-add-to-cart-colour: #8c3134;
+  --breadcrumbs-placeholder-colour: #637176;
+  --border-colour: #707070;
+  --menu-header-colour: #84532c;
+}

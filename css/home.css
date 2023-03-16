@@ -4,68 +4,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 25%;
-  font-family: "Lucida Grande", "Montserrat", "Avenir", Verdana, "Lucida Sans",
-    sans-serif;
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 98vh;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  padding: 10px 30px 0px 30px;
-}
-
-nav ul {
-  padding: 5px;
-  margin-top: 33px;
-}
-
-nav li {
-  display: inline;
-  padding-left: 50px;
 }
 
 nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
+  color: var(--background-colour);
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-.logo {
-  max-width: 180px;
-}
-
-.search_cart_bar {
-  display: flex;
-  position: relative;
-  margin-left: auto;
-  margin-top: 10px;
-}
-
-.fa-magnifying-glass {
-  position: absolute;
-  top: 10%;
-  right: 60px;
-  color: white;
-  font-size: 20px;
-}
-
-.shopping_cart {
-  height: 25px;
-  padding: 0px 10px;
-}
-
+.fa-magnifying-glass,
+.search,
 .fa-bars {
-  position: relative;
-  color: white;
-  font-size: 25px;
+  color: var(--background-colour);
 }
 
 main {
@@ -83,7 +31,7 @@ main {
 h1 {
   font-family: "Lucida Grande", "Montserrat", "Avenir", Verdana, sans-serif;
   text-align: left;
-  color: white;
+  color: var(--background-colour);
   font-weight: bold;
   font-size: 100px;
 }
@@ -95,7 +43,7 @@ h1 {
 .cta_read-more {
   font-family: "montserrat";
   font-weight: bold;
-  color: white;
+  color: var(--background-colour);
   background-color: none;
   text-decoration: none;
   text-align: center;
@@ -107,16 +55,13 @@ h1 {
 
 .cta_read-more:hover {
   text-decoration: none;
-  background-color: white;
-  color: #42453e;
+  background-color: var(--background-colour);
+  color: var(--text-colour);
   font-weight: bolder;
 }
 
 footer {
-  color: white;
-  padding: 10px;
-  margin-bottom: 0px;
-  text-align: center;
+  color: var(--background-colour);
 }
 
 @media (max-width: 1300px) {
@@ -151,22 +96,6 @@ footer {
   .home_h1 {
     margin-bottom: 80px;
     margin-left: 30px;
-  }
-}
-
-@media (min-width: 850px) {
-  .search {
-    position: relative;
-    border: 2px solid white;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 1px;
-    min-width: 100px;
-    max-width: 150px;
-    height: 20px;
-    width: 100%;
-    font-size: 18px;
-    color: white;
-    outline: none;
   }
 }
 

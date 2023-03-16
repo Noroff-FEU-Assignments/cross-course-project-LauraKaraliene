@@ -1,80 +1,13 @@
 body {
-  background-color: white;
-  font-family: "Lucida Grande", "Montserrat", "Avenir", Verdana, "Lucida Sans",
-    sans-serif;
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
   min-height: 100vh;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #707070;
-  padding: 10px 30px 0px 30px;
-}
-
-nav ul {
-  padding: 5px;
-  margin-top: 33px;
-}
-
-nav li {
-  display: inline;
-  padding-left: 50px;
+  border-bottom: 1px solid var(--border-colour);
 }
 
 nav a {
-  text-decoration: none;
-  color: #42453e;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.logo {
-  max-width: 180px;
-}
-
-.search_cart_bar {
-  display: flex;
-  position: relative;
-  margin-left: auto;
-  margin-top: 10px;
-}
-
-.search {
-  position: relative;
-  border: 2px solid #42453e;
-  background: rgba(0, 0, 0, 0);
-  border-radius: 1 px;
-  min-width: 100 px;
-  max-width: 150 px;
-  height: 20 px;
-  width: 100%;
-  font-size: 18px;
-  outline: none;
-}
-
-.fa-magnifying-glass {
-  position: absolute;
-  top: 10%;
-  right: 60px;
-  color: #42453e;
-  font-size: 20px;
-}
-
-.shopping_cart {
-  height: 25px;
-  padding: 0px 10px;
-}
-
-.fa-bars {
-  position: relative;
-  color: #42453e;
-  font-size: 25px;
+  color: var(--text-colour);
 }
 
 main {
@@ -99,17 +32,12 @@ main img {
 h3 {
   margin-top: 5px;
   margin-bottom: 5px;
-  color: #42453e;
+  color: var(--text-colour);
 }
 
 h4 {
   margin-top: 0px;
-  color: #42453e;
-}
-
-h5 {
-  color: grey;
-  margin-top: 30px;
+  color: var(--text-colour);
 }
 
 .filters {
@@ -119,16 +47,9 @@ h5 {
 .option {
   margin-right: 20px;
   padding: 5px;
-  border: #42453e solid 1px;
+  border: var(--border-colour) solid 1px;
   border-radius: 10px;
   min-width: 150px;
-}
-
-footer {
-  color: #42453e;
-  padding: 10px;
-  margin-bottom: 0px;
-  text-align: center;
 }
 
 @media (max-width: 1500px) {
@@ -195,10 +116,6 @@ footer {
   .product-list {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 25px;
-  }
-
-  header {
-    border-bottom: 1px solid white;
   }
 
   nav {
