@@ -70,7 +70,7 @@ footer {
   }
 }
 
-@media (min-width: 701px) {
+@media (min-width: 751px) {
   .fa-bars {
     display: none;
   }
@@ -93,7 +93,7 @@ footer {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   body {
     background-color: var(--background-colour);
     background-image: none;
@@ -120,6 +120,10 @@ footer {
   h2 {
     color: var(--menu-header-colour);
     padding-left: 15px;
+  }
+
+  main {
+    margin-bottom: 100px;
   }
 
   .men_main {

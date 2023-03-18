@@ -126,6 +126,10 @@ footer {
     padding-left: 15px;
   }
 
+  main {
+    margin-bottom: 100px;
+  }
+
   .women_main {
     position: relative;
     flex-direction: column;
