@@ -13,18 +13,22 @@ nav a {
 main {
   position: relative;
   flex: 1;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.contact-us {
+  margin: 30px auto;
 }
 
 .contact-info {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 20px auto;
+  margin: 50px auto 20px auto;
 }
 
 .info-blocks {
-  margin: 20px;
+  margin: 0px 20px;
 }
 
 .social-media {
@@ -57,10 +61,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px auto;
+  margin: 0px auto;
+  padding: 30px auto;
 }
 
-.form__input {
+.form-input {
   display: block;
   padding: 8px;
   margin: 12px auto;
@@ -73,7 +78,7 @@ label {
   font-size: 0.6em;
 }
 
-.cta-contact {
+button {
   width: 200px;
   padding: 8px 5px;
   color: var(--cta-send-checkout-colour);
@@ -86,10 +91,28 @@ label {
   display: block;
 }
 
-.cta-contact:hover {
+button:hover {
   color: var(--background-colour);
   background-color: var(--cta-send-checkout-colour);
   font-weight: 400;
+}
+
+.form-error {
+  display: none;
+  color: var(--allert-colour);
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.information-message {
+  background: var(--background-colour);
+  padding: 10px;
+  margin: 0px auto;
+  color: var(--cta-send-checkout-colour);
+  border: 2px solid var(--cta-send-checkout-colour);
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
 }
 
 @media (max-width: 950px) {
