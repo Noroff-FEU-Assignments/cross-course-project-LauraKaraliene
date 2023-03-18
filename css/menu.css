@@ -40,6 +40,7 @@ main {
 
 .help {
   border-bottom: none;
+  margin-bottom: 30px;
 }
 
 .menu_main a {

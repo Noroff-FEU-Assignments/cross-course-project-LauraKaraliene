@@ -105,7 +105,7 @@ footer {
   }
 
   header {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--background-colour);
   }
 
   nav {
@@ -147,5 +147,9 @@ footer {
 @media (max-width: 400px) {
   .logo {
     max-width: 100px;
+  }
+
+  header {
+    padding: 10px 10px;
   }
 }
