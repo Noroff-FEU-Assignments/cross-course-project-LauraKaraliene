@@ -69,7 +69,6 @@ body {
 }
 
 .breadcrumbs a {
-  padding-right: 5px;
   color: var(--breadcrumbs-placeholder-colour);
   font-weight: lighter;
   font-size: 0.8em;
