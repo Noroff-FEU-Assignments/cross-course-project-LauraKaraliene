@@ -7,6 +7,11 @@ header {
   border-bottom: #707070 solid 1px;
 }
 
+.fa-magnifying-glass {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 main {
   position: relative;
   flex: 1;

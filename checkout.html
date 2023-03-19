@@ -70,126 +70,178 @@
     </header>
 
     <main>
+      <div id="checkoutMessage"></div>
       <section class="checkout-main">
         <section class="checkout-left">
-          <form class="form-left">
+          <form class="form-left checkout-form" id="checkoutForm1">
             <label for="firts-name">1. Contact information</label>
-            <input
-              type="text"
-              placeholder="First name"
-              name="first-name"
-              class="form-input long"
-              required
-            />
-            <label for="last-name"></label>
-            <input
-              type="text"
-              placeholder="Last name"
-              class="form-input long"
-              name="last-name"
-            />
-            <label for="checkout-email"></label>
-            <input
-              type="email"
-              placeholder="E-mail"
-              name="checkout-email"
-              class="form-input long"
-              required
-            />
+            <div>
+              <input
+                type="text"
+                placeholder="First name (required)"
+                name="first-name"
+                class="form-input long"
+                id="contactInfoFirstName"
+              />
+              <div class="form-error" id="contactInfoFirstNameError">
+                Please enter your name
+              </div>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Last name"
+                class="form-input long"
+                name="last-name"
+                id="contactInfoLastName"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="E-mail (required)"
+                name="checkout-email"
+                class="form-input long"
+                id="checkoutEmail"
+              />
+              <div class="form-error" id="checkoutEmailError">
+                Please enter a valid email address
+              </div>
+            </div>
           </form>
         </section>
         <section class="checkout-middle">
-          <form class="form-middle">
+          <form class="form-middle checkout-form" id="checkoutForm2">
             <label for="first-name">2. Shipping address</label>
-            <input
-              type="text"
-              placeholder="First name"
-              name="first-name"
-              class="form-input long"
-              required
-            />
-            <laabel for="last-name"></laabel>
-            <input
-              type="text"
-              placeholder="Last name"
-              class="form-input long"
-              name="last-name"
-            />
-            <label for="phone"></label>
-            <input
-              type="tel"
-              placeholder="Phone number"
-              name="phone"
-              class="form-input long"
-            />
-            <label for="street-house-number"></label>
-            <input
-              type="text"
-              placeholder="Street and house number"
-              name="street-house-number"
-              class="form-input long"
-              required
-            />
-            <label for="postal-code"></label>
-            <input
-              type="text"
-              placeholder="Postal code"
-              name="postal-code"
-              class="form-input short"
-              required
-            />
-            <label for="city"></label>
-            <input
-              type="text"
-              placeholder="City"
-              class="form-input long"
-              name="city"
-              required
-            />
-            <label for="country"></label>
-            <input
-              type="text"
-              placeholder="Country"
-              name="country"
-              class="form-input long"
-              required
-            />
+            <div>
+              <input
+                type="text"
+                placeholder="First name (required)"
+                name="first-name"
+                class="form-input long"
+                id="shippingFirstName"
+              />
+              <div class="form-error" id="shippingFirstNameError">
+                Please enter your name
+              </div>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Last name (required)"
+                class="form-input long"
+                name="last-name"
+                id="shippingLastName"
+              />
+              <div class="form-error" id="shippingLastNameError">
+                Please enter your last name
+              </div>
+            </div>
+            <div>
+              <input
+                type="tel"
+                placeholder="Phone number"
+                name="phone"
+                class="form-input long"
+                id="phone"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Street and house number (required)"
+                name="street-house-number"
+                class="form-input long"
+                id="address"
+              />
+              <div class="form-error" id="addressError">
+                Please enter a valid address
+              </div>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Postal code (required)"
+                name="postal-code"
+                class="form-input short"
+                id="postalCode"
+              />
+              <div class="form-error" id="postalCodeError">
+                Please enter a valid postal code
+              </div>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="City (required)"
+                class="form-input long"
+                name="city"
+                id="city"
+              />
+              <div class="form-error" id="cityError">Please enter a city</div>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Country (required)"
+                name="country"
+                class="form-input long"
+                id="country"
+              />
+              <div class="form-error" id="countryError">
+                Please enter a country
+              </div>
+            </div>
           </form>
         </section>
         <section class="checkout-right">
-          <form class="form-right">
+          <form class="form-right checkout-form" id="checkoutForm3">
             <label for="firts-name">3. Credit Card Information</label>
-            <input
-              type="text"
-              placeholder="Name"
-              name="first-name"
-              class="form-input long"
-              required
-            />
-            <label for="card-number"></label>
-            <input
-              type="text"
-              placeholder="Credit card number"
-              name="card-number"
-              class="form-input long"
-              required
-            />
-            <label for="date"></label>
-            <input
-              type="date"
-              placeholder="Expiration date"
-              name="date"
-              class="form-input short"
-              required
-            />
-            <label for="cvv"></label>
-            <input
-              type="text"
-              placeholder="CVV"
-              name="cvv"
-              class="form-input short"
-              required
-            />
+            <div>
+              <input
+                type="text"
+                placeholder="Name (required)"
+                name="first-name"
+                class="form-input long"
+                id="cardName"
+              />
+              <div class="form-error" id="cardNameError">
+                Please enter your first and the last name
+              </div>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Credit card number (required)"
+                name="card-number"
+                class="form-input long"
+                id="cardNumber"
+              />
+              <div class="form-error" id="cardNumberError">
+                Please enter a valid credit card number
+              </div>
+            </div>
+            <div>
+              <input
+                type="date"
+                placeholder="Expiration date"
+                name="date"
+                class="form-input short"
+                id="date"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="CVV (required)"
+                name="cvv"
+                class="form-input short"
+                id="cvv"
+              />
+              <div class="form-error" id="cvvError">
+                Please enter a valid cvv number
+              </div>
+            </div>
             <button type="submit" class="checkout-form-button">
               Place order
             </button>
@@ -215,7 +267,6 @@
       </div>
     </main>
     <footer>Copyright &copy; Rainy Days 2022</footer>
-    <script src="js/script.js"></script>
-    <script src="js/checkout.js"></script>
+    <script src="js/checkout.js" type="module"></script>
   </body>
 </html>

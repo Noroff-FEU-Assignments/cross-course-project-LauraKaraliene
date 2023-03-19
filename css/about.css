@@ -170,10 +170,12 @@ footer {
   .fa-bars {
     display: none;
   }
+}
 
+@media (max-width: 750px) {
   .fa-magnifying-glass {
-    font-size: 23px;
-    right: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
   }
 }
 

@@ -17,18 +17,18 @@ main {
 }
 
 .contact-us {
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 .contact-info {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 50px auto 20px auto;
+  margin: 70px auto 20px auto;
 }
 
 .info-blocks {
-  margin: 0px 20px;
+  margin: 20px 20px auto 20px;
 }
 
 .social-media {
@@ -107,10 +107,10 @@ button:hover {
 .information-message {
   background: var(--background-colour);
   padding: 10px;
-  margin: 0px auto;
+  margin: 0px auto 20px auto;
   color: var(--cta-send-checkout-colour);
-  border: 2px solid var(--cta-send-checkout-colour);
-  border-radius: 10px;
+  /* border: 2px solid var(--cta-send-checkout-colour);
+  border-radius: 10px; */
   width: 300px;
   text-align: center;
 }
@@ -141,9 +141,8 @@ button:hover {
   }
 
   .fa-magnifying-glass {
-    font-size: 23px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   .shopping_cart {
