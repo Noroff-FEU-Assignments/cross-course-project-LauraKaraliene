@@ -72,46 +72,46 @@
     <main>
       <div id="checkoutMessage"></div>
       <section class="checkout-main">
-        <section class="checkout-left">
-          <form class="form-left checkout-form" id="checkoutForm1">
-            <label for="firts-name">1. Contact information</label>
-            <div>
-              <input
-                type="text"
-                placeholder="First name (required)"
-                name="first-name"
-                class="form-input long"
-                id="contactInfoFirstName"
-              />
-              <div class="form-error" id="contactInfoFirstNameError">
-                Please enter your name
+        <form class="checkout-form" id="checkoutForm">
+          <section class="checkout-left form-left">
+              <label for="firts-name">1. Contact information</label>
+              <div>
+                <input
+                  type="text"
+                  placeholder="First name (required)"
+                  name="first-name"
+                  class="form-input long"
+                  id="contactInfoFirstName"
+                />
+                <div class="form-error" id="contactInfoFirstNameError">
+                  Please enter your name
+                </div>
               </div>
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Last name"
-                class="form-input long"
-                name="last-name"
-                id="contactInfoLastName"
-              />
-            </div>
-            <div>
-              <input
-                type="email"
-                placeholder="E-mail (required)"
-                name="checkout-email"
-                class="form-input long"
-                id="checkoutEmail"
-              />
-              <div class="form-error" id="checkoutEmailError">
-                Please enter a valid email address
+              <div>
+                <input
+                  type="text"
+                  placeholder="Last name"
+                  class="form-input long"
+                  name="last-name"
+                  id="contactInfoLastName"
+                />
               </div>
-            </div>
-          </form>
-        </section>
-        <section class="checkout-middle">
-          <form class="form-middle checkout-form" id="checkoutForm2">
+              <div>
+                <input
+                  type="email"
+                  placeholder="E-mail (required)"
+                  name="checkout-email"
+                  class="form-input long"
+                  id="checkoutEmail"
+                />
+                <div class="form-error" id="checkoutEmailError">
+                  Please enter a valid email address
+                </div>
+              </div>
+          </section>
+       
+       
+        <section class="checkout-middle form-middle">
             <label for="first-name">2. Shipping address</label>
             <div>
               <input
@@ -192,10 +192,10 @@
                 Please enter a country
               </div>
             </div>
-          </form>
         </section>
-        <section class="checkout-right">
-          <form class="form-right checkout-form" id="checkoutForm3">
+
+
+        <section class="checkout-right form-right">
             <label for="firts-name">3. Credit Card Information</label>
             <div>
               <input
@@ -245,7 +245,7 @@
             <button type="submit" class="checkout-form-button">
               Place order
             </button>
-          </form>
+        </form>
         </section>
       </section>
       <div class="payment-icons">

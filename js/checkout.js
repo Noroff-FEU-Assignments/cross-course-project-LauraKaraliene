@@ -1,4 +1,4 @@
-const checkoutForms = document.querySelectorAll(".checkout-form");
+const checkoutForm = document.querySelector("#checkoutForm");
 const contactInfoFirstName = document.querySelector("#contactInfoFirstName");
 const contactInfoFirstNameError = document.querySelector(
   "#contactInfoFirstNameError"
@@ -116,9 +116,7 @@ function validateCheckoutForm(event) {
   }
 }
 
-checkoutForms.forEach((form) => {
-  form.addEventListener("submit", validateCheckoutForm);
-});
+checkoutForm.addEventListener("submit", validateCheckoutForm);
 
 function checkLength(value, len) {
   if (value.trim().length > len) {
@@ -136,7 +134,7 @@ function validateEmail(email) {
 
 function validatePostalCode(postalCode) {
   const norwayPostalCodeRegex = /^\d{4}$/;
-  const isValidPostalCode = norwayPostalCodeRegex.test(postalcode);
+  const isValidPostalCode = norwayPostalCodeRegex.test(postalCode);
   return isValidPostalCode;
 }
 

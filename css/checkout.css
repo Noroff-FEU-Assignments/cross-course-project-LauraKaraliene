@@ -21,7 +21,7 @@ main {
 
 form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: left;
   padding: 20px;
 }
@@ -48,6 +48,7 @@ form {
 }
 
 label {
+  display: block;
   text-align: center;
   font-weight: bolder;
 }

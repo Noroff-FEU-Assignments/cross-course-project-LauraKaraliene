@@ -17,7 +17,12 @@ main {
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-direction: row;
   text-align: center;
+  justify-content: center;
+  margin: 15px auto;
+  width: 300px;
 }
 
 .breadcrumbs a {
