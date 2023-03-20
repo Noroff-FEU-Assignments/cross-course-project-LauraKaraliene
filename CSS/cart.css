@@ -11,12 +11,18 @@ main {
   flex: 1;
 }
 
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 50px;
+}
+
 .main-content {
   display: flex;
   flex-direction: row;
   margin: 60px auto;
   max-width: 900px;
-  border: 1px solid var(--border-colour);
+  /* border: 1px solid var(--border-colour); */
 }
 
 .main-left {
@@ -55,7 +61,7 @@ main {
 .main-middle {
   display: flex;
   flex-direction: column;
-  text-align: right;
+  text-align: center;
   padding: 20px;
   width: 300px;
 }
@@ -63,11 +69,26 @@ main {
 .main-middle-block {
   height: 130px;
   padding: 20px;
+  align-self: center;
 }
 
 .main-middle p {
   margin: 7px auto;
   font-size: 0.8em;
+}
+
+.plus-minus {
+  display: flex;
+  flex-direction: row;
+  width: 65px;
+  align-items: center;
+}
+
+.button-minus,
+.button-plus {
+  border: none;
+  font-size: 1.1em;
+  text-align: center;
 }
 
 .main-middle-price {
@@ -90,8 +111,9 @@ input {
   flex-direction: column;
   margin: 0px 0px 0px auto;
   padding: 20px;
-  border-left: 1px solid var(--border-colour);
+  border-radius: 2%;
   width: 300px;
+  max-height: 500px;
   align-items: center;
   background-color: var(--background-colour-cart);
 }

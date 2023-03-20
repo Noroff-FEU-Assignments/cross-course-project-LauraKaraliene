@@ -30,6 +30,8 @@ const cvv = document.querySelector("#cvv");
 const cvvError = document.querySelector("#cvvError");
 
 const mainContent = document.querySelector(".checkout-main");
+const paymentIcons = document.querySelector(".payment-icons");
+
 const checkoutMessageSubmit = document.querySelector("#checkoutMessage");
 
 function validateCheckoutForm(event) {
@@ -60,7 +62,7 @@ function validateCheckoutForm(event) {
   } else {
     addressError.style.display = "block";
   }
-  if (checkLength(postalCode.value, 3)) {
+  if (validatePostalCode(postalCode.value)) {
     postalCodeError.style.display = "none";
   } else {
     postalCodeError.style.display = "block";
@@ -85,34 +87,34 @@ function validateCheckoutForm(event) {
   } else {
     cardNumberError.style.display = "block";
   }
-  if (checkLength(cvv.value, 3)) {
+  if (validateCvv(cvv.value)) {
     cvvError.style.display = "none";
   } else {
     cvvError.style.display = "block";
   }
 
   if (
-    contactInfoFirstName.value >= 1 &&
-    validateEmail &&
-    shippingFirstName.value > 1 &&
-    shippingLastName.value > 1 &&
-    address.value >= 10 &&
-    validatePostalCode &&
-    city.value > 1 &&
-    country.value > 1 &&
-    validateCardName &&
-    cardNumber.value >= 12 &&
-    validateCvv
+    contactInfoFirstName.value < 1 ||
+    !validateEmail ||
+    shippingFirstName.value < 1 ||
+    shippingLastName.value < 1 ||
+    address.value < 10 ||
+    !validatePostalCode ||
+    city.value < 1 ||
+    country.value < 1 ||
+    !validateCardName ||
+    cardNumber.value < 12 ||
+    !validateCvv
   ) {
     return;
+    checkoutMessageSubmit.innerHTML = "";
+  } else {
     event.target.reset();
     mainContent.style.display = "none";
-
+    paymentIcons.style.display = "none";
     checkoutMessageSubmit.innerHTML =
-      '<div class="checkout-message">We have received your order and will start processing it right away. Thank you for shopping with us!</div>';
+      '<div class="checkout-message"><i class="fa-solid fa-check check"></i><h1>Thank you!<h1><h2>We have received your order and will start processing it right away!<h2><div><a href="../products/jackets.html"class="cart-button-continue-shopping">Continue shoping</a></div></div>';
     checkoutMessageSubmit.style.display = "block";
-  } else {
-    checkoutMessageSubmit.innerHTML = "";
   }
 }
 

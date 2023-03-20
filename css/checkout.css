@@ -29,7 +29,7 @@ form {
 .form-input {
   display: flex;
   padding: 8px;
-  margin: 12px;
+  margin: 15px;
   border: var(--border-colour) solid 1px;
   border-radius: 10px;
 }
@@ -75,7 +75,7 @@ button {
 .payment-icons {
   display: flex;
   flex-direction: row;
-  margin: 50px auto 0px auto;
+  margin: 100px auto 0px auto;
   justify-content: center;
 }
 
@@ -97,22 +97,64 @@ button {
 
 .checkout-message {
   background: var(--background-colour);
-  padding: 10px;
-  margin: 0px auto 20px auto;
+  margin: 50px auto;
   color: var(--cta-send-checkout-colour);
-  /* border: 2px solid var(--cta-send-checkout-colour);
-  border-radius: 10px; */
+  padding: 30px;
+  border: 2px solid var(--cta-send-checkout-colour);
+  border-radius: 10px;
   width: 300px;
   text-align: center;
+}
+
+.check {
+  font-size: 1.5em;
+  color: var(--background-colour);
+  background-color: var(--cta-send-checkout-colour);
+  padding: 15px;
+  border: 1px solid var(--cta-send-checkout-colour);
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--text-colour);
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: lighter;
+  margin-bottom: 40px;
+  color: var(--text-colour);
 }
 
 .form-error {
   display: none;
   color: var(--allert-colour);
   text-align: left;
-  padding-left: 12px;
+  padding-left: 15px;
   font-size: 0.7rem;
   margin-top: -5px;
+}
+
+.cart-button-continue-shopping {
+  background-color: var(--cta-send-checkout-colour);
+  color: var(--background-colour);
+  border: var(--cta-send-checkout-colour);
+  padding: 8px 16px;
+}
+
+.cart-button-continue-shopping:hover {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 13px;
+}
+
+.cart-button-continue-shopping:active {
+  text-decoration: none;
+  background-color: var(--background-colour);
+  color: var(--cta-send-checkout-colour);
+  border: 1px solid var(--cta-send-checkout-colour);
 }
 
 @media (max-width: 1200px) {
@@ -157,9 +199,17 @@ button {
   }
 
   .checkout-main {
+    margin: 0px auto;
+  }
+
+  form {
     flex-direction: column;
     align-items: center;
-    margin: 30px auto;
+    margin: 20px auto;
+  }
+
+  label {
+    margin-top: 30px;
   }
 
   .long {
@@ -206,7 +256,7 @@ button {
   }
 
   main {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -234,5 +284,13 @@ button {
     max-width: 200px;
     margin-bottom: 30px;
     padding: 0px;
+  }
+
+  .checkout-message {
+    margin: 50px auto;
+
+    padding: 30px 20px;
+
+    width: 250px;
   }
 }

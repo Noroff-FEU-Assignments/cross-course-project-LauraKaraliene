@@ -33,11 +33,15 @@ h3 {
   margin-top: 5px;
   margin-bottom: 5px;
   color: var(--text-colour);
+  font-weight: normal;
+  font-size: 01em;
 }
 
 h4 {
   margin-top: 0px;
   color: var(--text-colour);
+  font-weight: normal;
+  font-size: 0.8em;
 }
 
 .filters {
