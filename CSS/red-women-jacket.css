@@ -102,25 +102,6 @@ h5 {
   font-weight: normal;
 }
 
-.size {
-  margin-bottom: 10px;
-}
-
-.sizes-letters {
-  display: flex;
-  flex-direction: row;
-}
-
-.sizes-letters div {
-  margin-right: 5px;
-  border: 2px solid rgb(186, 184, 184);
-  padding: 5px;
-}
-
-.clickable-letter:focus {
-  border: 2px solid black;
-}
-
 .rectangles {
   display: flex;
   flex-direction: row;
@@ -157,7 +138,26 @@ h5 {
   border: 2px solid #a4c9e0;
 }
 
-.clickable-rectangle:focus {
+.clickable {
+  border: 2px solid black;
+}
+
+.size {
+  margin-bottom: 10px;
+}
+
+.sizes-letters {
+  display: flex;
+  flex-direction: row;
+}
+
+.sizes-specific-letter {
+  margin-right: 5px;
+  border: 2px solid rgb(205, 204, 204);
+  padding: 5px;
+}
+
+.clickable-letter {
   border: 2px solid black;
 }
 

@@ -113,7 +113,7 @@ function validateCheckoutForm(event) {
     mainContent.style.display = "none";
     paymentIcons.style.display = "none";
     checkoutMessageSubmit.innerHTML =
-      '<div class="checkout-message"><i class="fa-solid fa-check check"></i><h1>Thank you!<h1><h2>We have received your order and will start processing it right away!<h2><div><a href="../products/jackets.html"class="cart-button-continue-shopping">Continue shoping</a></div></div>';
+      '<div class="checkout-message"><i class="fa-solid fa-check check"></i><h1>Thank you!<h1><h2>We have received your order and will start processing it right away!<h2><div><a href="../products/jackets.html"class="cart-button-continue-shopping">Continue shopping</a></div></div>';
     checkoutMessageSubmit.style.display = "block";
   }
 }
