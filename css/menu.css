@@ -92,4 +92,20 @@ footer div {
   .search_menu {
     display: none;
   }
+
+  .fa-magnifying-glass {
+    margin-right: 30px;
+  }
+
+  .shopping_cart {
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 751px) {
+  .fa-magnifying-glass {
+    font-size: 23px;
+    right: 60px;
+  }
 }

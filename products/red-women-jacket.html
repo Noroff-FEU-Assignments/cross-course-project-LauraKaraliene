@@ -63,7 +63,8 @@
             src="../images/ic_shopping_cart_black_24px.png"
             alt="shoping cart"
             class="shopping_cart"
-        /></a>
+          /><span class="cart-items-number">0</span></a
+        >
         <a href="../menu.html"><i class="fa-solid fa-bars"></i></a>
       </div>
     </header>
@@ -150,7 +151,13 @@
             </div>
           </div>
           <div class="add-to-cart info">
-            <button type="button" class="cta_add-to-cart">Add to cart</button>
+            <button
+              onclick="addToCart(item)"
+              type="button"
+              class="cta_add-to-cart"
+            >
+              Add to cart
+            </button>
           </div>
         </section>
       </section>

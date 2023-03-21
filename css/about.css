@@ -14,6 +14,10 @@ nav a,
   color: var(--background-colour);
 }
 
+.cart-items-number {
+  color: var(--background-colour);
+}
+
 main {
   position: relative;
   flex: 1;
@@ -147,13 +151,12 @@ footer {
   }
 
   .fa-magnifying-glass {
-    font-size: 23px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 30px;
   }
 
   .shopping_cart {
-    margin-right: 5px;
+    margin-right: 0px;
+    padding-right: 0px;
   }
 
   .about {
@@ -166,16 +169,16 @@ footer {
   }
 }
 
-@media (min-width: 751px) {
-  .fa-bars {
-    display: none;
-  }
-}
-
 @media (max-width: 750px) {
   .fa-magnifying-glass {
     margin-left: 10px;
     margin-right: 20px;
+  }
+}
+
+@media (min-width: 751px) {
+  .fa-bars {
+    display: none;
   }
 }
 
@@ -193,5 +196,12 @@ footer {
 
   header {
     padding: 10px 10px;
+  }
+}
+
+@media (min-width: 300px) {
+  .fa-magnifying-glass {
+    font-size: 23px;
+    right: 60px;
   }
 }
