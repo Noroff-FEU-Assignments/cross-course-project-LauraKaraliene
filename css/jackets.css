@@ -25,7 +25,7 @@ main {
   margin: 60px auto;
 }
 
-main img {
+.main-img {
   max-width: 300px;
 }
 
@@ -57,7 +57,7 @@ h4 {
 }
 
 @media (max-width: 1500px) {
-  main img {
+  .main-img {
     max-width: 200px;
   }
 }
@@ -68,7 +68,7 @@ h4 {
     grid-gap: 20px;
   }
 
-  main img {
+  .main-img {
     max-width: 180px;
   }
 }
@@ -78,7 +78,7 @@ h4 {
     max-width: 150px;
   }
 
-  main img {
+  .main-img {
     max-width: 150px;
   }
 
