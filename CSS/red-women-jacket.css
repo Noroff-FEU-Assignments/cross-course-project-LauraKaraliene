@@ -87,6 +87,10 @@ main {
   margin: 10px;
 }
 
+.info p {
+  font-size: smaller;
+}
+
 h1 {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -173,6 +177,7 @@ h5 {
   border: 2px solid var(--cta-add-to-cart-colour);
   border-radius: 15px;
   padding: 12px 53px;
+  margin: 20px auto;
 }
 
 button {
@@ -239,12 +244,6 @@ button {
 
   .rectangles img {
     max-width: 30px;
-  }
-
-  .cta_add-to-cart {
-    font-size: 1em;
-    padding: 12px 30px;
-    margin: 20px auto;
   }
 
   .product-page {

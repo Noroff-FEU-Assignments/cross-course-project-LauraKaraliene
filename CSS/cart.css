@@ -21,7 +21,12 @@ h1 {
   display: flex;
   flex-direction: row;
   margin: 60px auto;
-  max-width: 900px;
+  width: 900px;
+}
+
+.main-left-middle-block {
+  max-width: 600px;
+  min-height: 500px;
 }
 
 .main-left-jacket-block {
@@ -29,12 +34,7 @@ h1 {
   flex-direction: row;
   align-items: center;
   padding: 20px;
-  /* max-width: 600px; */
-  border-bottom: 1px solid var(--border-colour);
-}
-
-.main-left-middle-block {
-  max-width: 600px;
+  border-bottom: 1px solid rgb(190, 190, 190);
 }
 
 .main-left-jacket-block p {

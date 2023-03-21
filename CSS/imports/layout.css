@@ -75,7 +75,7 @@ nav a:hover {
   padding: 0px 5px 0px 10px;
 }
 
-.cart-items-number {
+.cart-icon-number {
   font-size: 1.1em;
   color: var(--text-colour);
   margin-right: 10px;
