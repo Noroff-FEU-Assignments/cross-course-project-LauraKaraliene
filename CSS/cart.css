@@ -14,19 +14,20 @@ main {
 h1 {
   font-size: 1.5em;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .main-content {
   display: flex;
-  flex-direction: row;
-  margin: 60px auto;
-  width: 900px;
+  flex-direction: column;
+  margin: 20px auto;
+  max-width: 700px;
 }
 
 .main-left-middle-block {
   max-width: 600px;
   min-height: 500px;
+  margin: 20px auto;
 }
 
 .main-left-jacket-block {
@@ -92,12 +93,12 @@ h1 {
 
 .main-right {
   display: flex;
-  flex-direction: column;
-  margin: 0px 0px 0px auto;
+  flex-direction: row;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 2%;
-  width: 300px;
-  max-height: 500px;
+  width: 700px;
+  max-height: 400px;
   align-items: center;
   background-color: var(--background-colour-cart);
 }
@@ -117,6 +118,7 @@ h1 {
 }
 
 .order-summary-block {
+  width: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -134,10 +136,20 @@ h1 {
 
 h4 {
   font-weight: normal;
+  margin-top: 0px;
+}
+
+.cart-2-buttons {
+  max-width: 200px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 .cart-button {
-  margin: 40px auto 20px auto;
+  margin: 20px auto 30px auto;
+  max-width: 150px;
 }
 
 .cart-button-text {
@@ -149,8 +161,13 @@ h4 {
   text-decoration: none;
 }
 
+.continue {
+  margin: 20px auto 0px auto;
+}
+
 .shipping-info {
-  margin-top: 50px;
+  margin: auto 0px;
+  width: 180px;
 }
 
 .shipping-info p {
@@ -159,16 +176,18 @@ h4 {
 
 .shipping {
   text-align: left;
-  padding-left: 10px;
+  /* padding-left: 10px; */
+}
+
+@media (max-width: 1000px) {
+  nav li {
+    padding-left: 25px;
+  }
 }
 
 @media (max-width: 950px) {
   .search {
-    max-width: 150px;
-  }
-
-  nav li {
-    padding-left: 20px;
+    display: none;
   }
 
   .main-left-middle-block {
@@ -195,10 +214,6 @@ h4 {
 }
 
 @media (max-width: 849px) {
-  .search {
-    display: none;
-  }
-
   /* .main-middle-block {
     width: 150px;
   } */

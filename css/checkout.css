@@ -181,13 +181,13 @@ h2 {
   .short {
     max-width: 100px;
   }
+
+  nav li {
+    padding-left: 25px;
+  }
 }
 
 @media (max-width: 950px) {
-  nav li {
-    padding-left: 20px;
-  }
-
   .search {
     max-width: 150px;
   }

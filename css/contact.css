@@ -115,23 +115,19 @@ button:hover {
   text-align: center;
 }
 
+@media (max-width: 1000px) {
+  nav li {
+    padding-left: 25px;
+  }
+}
+
 @media (max-width: 950px) {
   .search {
-    max-width: 150px;
+    display: none;
   }
 
   main {
     margin-top: 20px;
-  }
-
-  nav li {
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 849px) {
-  .search {
-    display: none;
   }
 }
 

@@ -202,6 +202,90 @@ button {
   padding-top: 5px;
 }
 
+/*popup*/
+.popup {
+  display: none;
+  border: 2px solid var(--cta-send-checkout-colour);
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  box-shadow: 10px 10px 10px #d9d7d7;
+  background-color: white;
+  transition: opacity 1s ease-in-out;
+}
+
+.popup.show {
+  display: block;
+  opacity: 1;
+}
+
+.popup-first {
+  text-align: center;
+  padding: 20px auto 20px auto;
+  border-bottom: 1px solid rgb(190, 190, 190);
+  font-weight: bolder;
+}
+
+.jacket-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  margin: 0px auto;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.main-left-jacket {
+  max-width: 70px;
+  max-height: 100px;
+}
+
+.jacket-block p {
+  margin: 7px auto;
+  font-size: 0.6em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.popup-jacket-description {
+  margin-left: 20px;
+}
+
+.popup-subtotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-weight: bolder;
+  font-size: 0.9em;
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.popup-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.cart-button {
+  margin: 10px auto;
+}
+
+.continue {
+  margin: 10px auto;
+  min-width: 120px;
+  padding: 7px 10px;
+}
+
 @media (max-width: 1100px) {
   .product_specific {
     max-width: 400px;
@@ -221,13 +305,15 @@ button {
   }
 }
 
+@media (max-width: 1000px) {
+  nav li {
+    padding-left: 25px;
+  }
+}
+
 @media (max-width: 950px) {
   .search {
-    max-width: 150px;
-  }
-
-  nav li {
-    padding-left: 20px;
+    display: none;
   }
 }
 
@@ -238,10 +324,6 @@ button {
 }
 
 @media (max-width: 849px) {
-  .search {
-    display: none;
-  }
-
   .rectangles img {
     max-width: 30px;
   }
@@ -255,6 +337,12 @@ button {
   .jacket {
     margin: auto;
     align-self: center;
+  }
+
+  .popup {
+    top: 820px;
+    /* right: 405px; */
+    left: 190px;
   }
 }
 
@@ -287,6 +375,11 @@ button {
   .info {
     max-width: 300px;
   }
+
+  .popup {
+    top: 900px;
+    right: 405px;
+  }
 }
 
 @media (min-width: 751px) {
@@ -307,6 +400,11 @@ button {
 
   .jacket-small {
     max-width: 50px;
+  }
+
+  .popup {
+    top: 750px;
+    left: 100px;
   }
 }
 

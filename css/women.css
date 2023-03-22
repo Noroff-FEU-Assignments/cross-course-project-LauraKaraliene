@@ -58,17 +58,11 @@ footer {
   }
 
   nav li {
-    padding-left: 20px;
+    padding-left: 25px;
   }
 }
 
 @media (max-width: 950px) {
-  .search_women {
-    max-width: 150px;
-  }
-}
-
-@media (max-width: 850px) {
   .search_women {
     display: none;
   }

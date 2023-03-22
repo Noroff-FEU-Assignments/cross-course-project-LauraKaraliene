@@ -74,17 +74,19 @@ footer {
   }
 }
 
+@media (max-width: 1000px) {
+  nav li {
+    padding-left: 25px;
+  }
+}
+
 @media (max-width: 950px) {
   body {
     background-position-x: 60%;
   }
 
   .search {
-    max-width: 150px;
-  }
-
-  nav li {
-    padding-left: 20px;
+    display: none;
   }
 
   h1 {
@@ -93,10 +95,6 @@ footer {
 }
 
 @media (max-width: 849px) {
-  .search {
-    display: none;
-  }
-
   .home_h1 {
     margin-bottom: 80px;
     margin-left: 30px;

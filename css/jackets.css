@@ -68,6 +68,10 @@ h4 {
     grid-gap: 20px;
   }
 
+  nav li {
+    padding-left: 25px;
+  }
+
   .main-img {
     max-width: 180px;
   }
@@ -75,21 +79,11 @@ h4 {
 
 @media (max-width: 950px) {
   .search {
-    max-width: 150px;
+    display: none;
   }
 
   .main-img {
     max-width: 150px;
-  }
-
-  nav li {
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 849px) {
-  .search {
-    display: none;
   }
 }
 
