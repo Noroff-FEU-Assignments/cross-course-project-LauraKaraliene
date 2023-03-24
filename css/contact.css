@@ -115,6 +115,11 @@ button:hover {
   text-align: center;
 }
 
+.check {
+  margin: 0px 5px;
+  font-weight: bold;
+}
+
 @media (max-width: 1000px) {
   nav li {
     padding-left: 25px;
@@ -143,6 +148,10 @@ button:hover {
   .shopping_cart {
     margin-right: 0px;
     padding-right: 0px;
+  }
+
+  .cart-plus-number {
+    margin-right: 10px;
   }
 }
 

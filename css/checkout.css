@@ -250,6 +250,10 @@ h2 {
     padding-right: 0px;
   }
 
+  .cart-plus-number {
+    margin-right: 10px;
+  }
+
   .about {
     max-width: 300px;
     align-items: center;

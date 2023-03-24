@@ -62,8 +62,8 @@ body {
   text-align: center;
   border: 2px solid var(--cta-add-to-cart-colour);
   border-radius: 10px;
-  width: 150px;
-  padding: 7px 17px;
+  width: 160px;
+  padding: 7px 16px;
   font-family: "lucida grande";
   font-size: 0.8em;
   font-weight: 500;
@@ -72,7 +72,7 @@ body {
 .cart-button-continue-shopping:hover {
   text-decoration: none;
   font-weight: bolder;
-  padding: 7px 13px;
+  padding: 7px 10px;
 }
 
 .cart-button-continue-shopping:active {

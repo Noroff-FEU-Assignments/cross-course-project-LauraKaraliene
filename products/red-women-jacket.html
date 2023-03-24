@@ -58,13 +58,15 @@
       <div class="search_cart_bar">
         <input type="text" class="search" />
         <i class="fa-solid fa-magnifying-glass"></i>
-        <a href="../cart.html"
-          ><img
-            src="../images/ic_shopping_cart_black_24px.png"
-            alt="shoping cart"
-            class="shopping_cart"
-          /><span class="cart-icon-number">0</span></a
-        >
+        <div class="cart-plus-number">
+          <a href="../cart.html"
+            ><img
+              src="../images/ic_shopping_cart_black_24px.png"
+              alt="shoping cart"
+              class="shopping_cart"
+            /><span class="cart-icon-number">0</span></a
+          >
+        </div>
         <a href="../menu.html"><i class="fa-solid fa-bars"></i></a>
       </div>
     </header>
@@ -161,12 +163,10 @@
           </div>
         </section>
       </section>
-
       <section class="popup">
         <div class="popup-first">
           <p>Added to cart!</p>
         </div>
-
         <div class="jacket-block">
           <div>
             <img
@@ -181,25 +181,16 @@
             <p>Colour: Red</p>
           </div>
         </div>
-
         <div class="popup-subtotal">
           <p>Subtotal:</p>
           <p class="subtotal-price">nok 2300</p>
         </div>
-
         <div class="popup-buttons">
-          <button type="button" a href="../cart.html" class="cart-button">
-            Shopping Cart
-          </button>
+          <a href="../cart.html" class="cart-button"> Shopping Cart </a>
 
-          <button
-            type="button"
-            a
-            href="jackets.html"
-            class="cart-button-continue-shopping continue"
-          >
+          <a href="jackets.html" class="cart-button-continue-shopping continue">
             Continue shopping
-          </button>
+          </a>
         </div>
       </section>
     </main>

@@ -58,13 +58,15 @@
       <div class="search_cart_bar">
         <input type="text" class="search" />
         <i class="fa-solid fa-magnifying-glass"></i>
-        <a href="../cart.html"
-          ><img
-            src="../images/ic_shopping_cart_black_24px.png"
-            alt="shoping cart"
-            class="shopping_cart"
-          /><span class="cart-items-number">3</span></a
-        >
+        <div class="cart-plus-number">
+          <a href="../cart.html"
+            ><img
+              src="../images/ic_shopping_cart_black_24px.png"
+              alt="shoping cart"
+              class="shopping_cart"
+            /><span class="cart-items-number">0</span></a
+          >
+        </div>
         <a href="menu.html"><i class="fa-solid fa-bars"></i></a>
       </div>
     </header>
@@ -88,21 +90,16 @@
             </div>
           </div>
           <div class="cart-2-buttons">
-            <button
-              a
-              href="../checkout.html"
-              class="cart-button-text cart-button"
-            >
+            <a href="checkout.html" class="cart-button-text cart-button">
               Checkout
-            </button>
+            </a>
 
-            <button
-              a
+            <a
               href="../products/jackets.html"
               class="cart-button-continue-shopping continue"
             >
               Continue shopping
-            </button>
+            </a>
           </div>
           <div class="shipping-info">
             <p class="shipping">Shipping info</p>

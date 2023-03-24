@@ -101,6 +101,10 @@ footer div {
     margin-right: 0px;
     padding-right: 0px;
   }
+
+  .cart-plus-number {
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: 751px) {

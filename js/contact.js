@@ -31,7 +31,7 @@ function validateForm() {
   } else {
     form.reset();
     messageSubmit.innerHTML =
-      '<div class="information-message">Your message has been sent!</div>';
+      '<div class="information-message"><i class="fa-solid fa-check check"></i>Your message has been sent!</div>';
   }
 }
 
