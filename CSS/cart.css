@@ -91,7 +91,7 @@ h1 {
   text-underline-offset: 3px;
 }
 
-.main-right {
+.main-upper {
   display: flex;
   flex-direction: row;
   margin: 20px auto;
@@ -103,11 +103,11 @@ h1 {
   background-color: var(--background-colour-cart);
 }
 
-.main-right p {
+.main-upper p {
   margin: 7px auto;
 }
 
-.main-right h4 {
+.main-upper h4 {
   text-align: center;
 }
 
@@ -132,11 +132,6 @@ h1 {
   display: block;
   text-align: right;
   padding-left: 40px;
-}
-
-h4 {
-  font-weight: normal;
-  margin-top: 0px;
 }
 
 .cart-2-buttons {
@@ -176,7 +171,6 @@ h4 {
 
 .shipping {
   text-align: left;
-  /* padding-left: 10px; */
 }
 
 @media (max-width: 1000px) {
@@ -190,7 +184,7 @@ h4 {
     display: none;
   }
 
-  .main-right {
+  .main-upper {
     width: 600px;
   }
 
@@ -208,11 +202,6 @@ h4 {
     font-size: 0.8em;
   }
 }
-
-/* @media (max-width: 849px) {
-  .main-right {
-    width: 600px;
-  } */
 
 @media (max-width: 750px) {
   nav {
@@ -235,9 +224,6 @@ h4 {
   .main-middle-block {
     margin: 0px 30px 0px 20px;
   }
-  .shipping-info p {
-    font-size: 0.5em;
-  }
 }
 
 @media (min-width: 751px) {
@@ -252,7 +238,7 @@ h4 {
 }
 
 @media (max-width: 700px) {
-  .main-right {
+  .main-upper {
     flex-direction: column;
     width: 500px;
   }
@@ -272,7 +258,7 @@ h4 {
     margin-top: 50px;
   }
 
-  .main-right {
+  .main-upper {
     width: 400px;
     border: none;
   }
@@ -292,7 +278,7 @@ h4 {
     width: 300px;
   }
 
-  .main-right {
+  .main-upper {
     width: 300px;
     padding: 20px 0px;
   }

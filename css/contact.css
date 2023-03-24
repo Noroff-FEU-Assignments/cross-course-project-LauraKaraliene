@@ -109,8 +109,6 @@ button:hover {
   padding: 10px;
   margin: 0px auto 20px auto;
   color: var(--cta-send-checkout-colour);
-  /* border: 2px solid var(--cta-send-checkout-colour);
-  border-radius: 10px; */
   width: 300px;
   text-align: center;
 }

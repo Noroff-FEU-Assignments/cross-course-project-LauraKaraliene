@@ -1,0 +1,62 @@
+.checkout-form-button,
+.cart-button {
+  font-family: "Lucida Grande", "Montserrat", "Avenir", Verdana, "Lucida Sans",
+    sans-serif;
+  text-decoration: none;
+  padding: 7px;
+  margin: 5px 12px;
+  border: var(--cta-send-checkout-colour) solid 2px;
+  border-radius: 10px;
+  width: 120px;
+  text-align: center;
+  background-color: var(--background-colour);
+  font-family: "lucida grande";
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--cta-send-checkout-colour);
+}
+
+.checkout-form-button:hover,
+.cart-button:hover {
+  font-weight: bolder;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.checkout-form-button:active,
+.cart-button:active {
+  color: var(--background-colour);
+  background-color: var(--cta-send-checkout-colour);
+}
+
+.cart-button-continue-shopping {
+  background-color: var(--background-colour);
+  color: var(--cta-add-to-cart-colour);
+  text-align: center;
+  border: 2px solid var(--cta-add-to-cart-colour);
+  border-radius: 10px;
+  width: 130px;
+  padding: 7px 5px;
+  font-family: "lucida grande";
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.cart-button-continue-shopping:hover {
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 7px 10px;
+}
+
+.cart-button-continue-shopping:active {
+  text-decoration: none;
+  background-color: var(--cta-add-to-cart-colour);
+  color: var(--background-colour);
+}
+
+.remove {
+  border: none;
+  background-color: var(--background-colour);
+  font-size: 0.8em;
+  padding-top: 5px;
+}

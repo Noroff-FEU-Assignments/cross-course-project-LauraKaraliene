@@ -341,7 +341,6 @@ button {
 
   .popup {
     top: 820px;
-    /* right: 405px; */
     left: 190px;
   }
 }
@@ -363,10 +362,6 @@ button {
     margin-right: 0px;
     padding-right: 0px;
   }
-
-  /* .cart-plus-number {
-    margin-right: 10px;
-  } */
 
   .rectangles img {
     max-width: 50px;
