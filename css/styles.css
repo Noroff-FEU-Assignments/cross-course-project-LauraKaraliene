@@ -99,6 +99,25 @@ nav a:hover {
   font-size: 25px;
 }
 
+.loading {
+  border: 15px solid var(--text-colour);
+  border-top: 15px solid var(--background-colour-cart);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: rotate 2s linear infinite;
+  margin: 100px auto;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* women/men page*/
 .title {
   font-size: 18px;
@@ -106,8 +125,6 @@ nav a:hover {
   margin-bottom: 10px;
   color: var(--menu-header-colour);
 }
-
-/* button cart/checkout pages*/
 
 /* inputs */
 ::placeholder {
