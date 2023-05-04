@@ -14,7 +14,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("post");
 
-const url = "http://rainydaysss.icu/wp-json/wc/store/products/" + id;
+const url = "https://rainydaysss.icu/wp-json/wc/store/products/" + id;
 
 async function fetchProduct() {
   loader.classList.add("loading");

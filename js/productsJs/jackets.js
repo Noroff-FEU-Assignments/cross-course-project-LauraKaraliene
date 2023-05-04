@@ -1,4 +1,4 @@
-const url = "http://rainydaysss.icu/wp-json/wc/store/products?&per_page=15";
+const url = "https://rainydaysss.icu/wp-json/wc/store/products?&per_page=15";
 const productList = document.querySelector(".product-list");
 const loading = document.querySelector(".loading");
 
