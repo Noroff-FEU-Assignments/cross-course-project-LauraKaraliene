@@ -247,6 +247,14 @@ h1 {
     margin: 30px auto;
   }
 
+  .cart-button {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .cart-button-continue-shopping {
+    margin-top: 10px;
+  }
+
   .shipping-info,
   .shipping {
     text-align: center;
