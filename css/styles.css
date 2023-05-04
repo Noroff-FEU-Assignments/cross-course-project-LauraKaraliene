@@ -118,6 +118,14 @@ nav a:hover {
   }
 }
 
+.error {
+  color: var(--cta-add-to-cart-colour);
+  font-size: 1.3em;
+  border: 2px solid var(--cta-add-to-cart-colour);
+  border-radius: 20px;
+  padding: 0px 10px;
+}
+
 /* women/men page*/
 .title {
   font-size: 18px;
